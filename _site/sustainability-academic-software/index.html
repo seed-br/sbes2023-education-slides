@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>On the Sustainability of Academic Software (Research Software) | Grupo de Pesquisa SEED.BR</title>
+  <meta name="author" content="Christina, Daniela e Joenio" />
+  <link rel="stylesheet" href="/sbes2023/javascript/reveal.js/css/reveal.css">
+  <link rel="stylesheet" href="/sbes2023/javascript/reveal.js/css/theme/simple.css" id="theme">
+  
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="/sbes2023/javascript/reveal.js/lib/css/zenburn.css">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? '/sbes2023/javascript/reveal.js/css/print/pdf.css' : '/sbes2023/javascript/reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="/sbes2023/javascript/reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="/sbes2023/css/revealjs.css">
+</head>
+<body>
+  <div class="reveal">
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+      <!-- -------------------------------- -->
+
+<section>
+  <h3 id="on-the-sustainability-of-academic-software-the-case-of-static-analysis-tools">On the Sustainability of Academic Software: The Case of Static Analysis Tools</h3>
+
+  <table style="font-size:0.8em"><tr>
+<td style="text-align: center">
+Joenio Costa<br />
+Federal University of Bahia
+</td>
+<td style="text-align:center">
+Christina Chavez<br />
+Federal University of Bahia
+</td>
+<td style="text-align:center">
+Paulo Meirelles<br />
+Federal University of São Paulo
+</td>
+</tr></table>
+
+  <p><small style="font-size: 0.5em">
+<a href="https://doi.org/10.1145/3266237.3266243">https://doi.org/10.1145/3266237.3266243</a>
+</small></p>
+</section>
+
+<!-- -------------------------------- -->
+
+<section>
+  <h2 id="software-sustainability">Software Sustainability</h2>
+
+  <p><img src="/sbes2023/files/2023-07-12-paper2002.png" style="width:100px" /></p>
+
+  <p>human, social, economic, environmental, <strong>technical</strong></p>
+
+  <p><small class="cite">
+Robert Goodland. 2002. <strong>Sustainability: Human, Social, Economic and Environmental</strong>.
+</small></p>
+</section>
+
+<!-- -------------------------------- -->
+
+<section>
+  <h3 id="software-technical-sustainability">Software Technical Sustainability</h3>
+
+  <p>Concerned with the long-term usage of software and its capacity to evolve with
+changing conditions and requirements.</p>
+
+  <p><small class="cite">
+B. Penzenstadler and H. Femmer. 2013.
+<strong>A Generic Model for Sustainability with Process- and Product-specific Instances</strong>.
+</small></p>
+</section>
+
+<!-- -------------------------------- -->
+
+<section>
+  <h3 id="academic-software">Academic Software</h3>
+
+  <p>Software developed to collect, process, or analyze research results published
+in the academic literature.</p>
+
+  <p><small class="cite">
+ALLEN, A. et al. 2017.
+<strong>Engineering academic software (dagstuhl perspectives workshop 16252)</strong>.
+</small></p>
+</section>
+
+<!-- -------------------------------- -->
+
+<section>
+  <h3 id="research-software">Research Software</h3>
+
+  <p>Software developed to collect, process, or analyze research results published
+in the academic literature.</p>
+
+  <p><small class="cite">
+ALLEN, A. et al. 2017.
+<strong>Engineering academic software (dagstuhl perspectives workshop 16252)</strong>.
+</small></p>
+</section>
+
+<!-- -------------------------------- -->
+
+<section>
+  <p><img src="/sbes2023/files/scientific-reputation-diagram-en.png" style="background: white" /></p>
+
+  <p><small class="cite">
+James Howison and James D. Herbsleb. 2011.
+<strong>Scientific software production: incentives and collaboration</strong>.
+</small></p>
+</section>
+
+<!-- -------------------------------- -->
+
+<section data-background="orange" data-background-transition="slide">
+  <h2 id="how-measure-academic-software-sustainability">How measure Academic Software Sustainability?</h2>
+</section>
+
+<!-- -------------------------------- -->
+
+<section>
+  <p>Three exploratory studies:</p>
+
+  <ol>
+    <li>Publicization</li>
+    <li>Life cycle</li>
+    <li>Recognition</li>
+  </ol>
+</section>
+
+<!-- -------------------------------- -->
+
+<!-- image source: http://vidracariashowglass.com.br/wp-content/gallery/vitrine-para-loja/vitrine_1.jpg -->
+<section data-background="/sbes2023/files/vitrine_1.jpg">
+  <h4 id="study-1">Study 1</h4>
+
+  <h3 id="publicization-of-academic-software">Publicization of Academic Software</h3>
+
+  <p><em>url, license, source code, and download availability</em></p>
+</section>
+
+<!-- -------------------------------- -->
+
+<section data-transition="zoom">
+  <section>
+    <p><img src="/sbes2023/files/revisao-literatura-big.png" /></p>
+
+    <p>found 60 academic software projects of static analysis</p>
+  </section>
+
+  <!-- -------------------------------- -->
+
+  <section>
+    <p>Inclusion criterion and keywords</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Criteria</th>
+          <th>Keywords</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Mentions the project, software or tool</td>
+          <td><em>tool</em> or <em>framework</em></td>
+        </tr>
+        <tr>
+          <td>Makes software available for download</td>
+          <td><em>download</em> or <em>available</em></td>
+        </tr>
+        <tr>
+          <td>Identifies project URL</td>
+          <td><em>http</em>, <em>https</em> or <em>ftp</em></td>
+        </tr>
+        <tr>
+          <td>Static analysis domain</td>
+          <td><em>static analysis</em> or <em>parser</em></td>
+        </tr>
+      </tbody>
+    </table>
+
+  </section>
+
+  <!-- -------------------------------- -->
+
+  <section>
+    <p>Inclusion criterion for extraction</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Criteria</th>
+          <th>Explanation</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Identifiable</td>
+          <td>Is it possible to identify a software project among the outputs of the article?</td>
+        </tr>
+        <tr>
+          <td>Available</td>
+          <td>Can we find mention to the URL for download the software project?</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </section>
+</section>
+
+<!-- -------------------------------- -->
+
+<section>
+  <p><strong>Official online presence (RQ1.1)</strong></p>
+
+  <p>from 60 academic software, 15 projects (25%) do not have an official online presence</p>
+
+  <p><strong>Sofware available for download (RQ1.2)</strong></p>
+
+  <p>from 60  academic software, 24 projects (40%) are not available for download</p>
+</section>
+
+<!-- -------------------------------- -->
+
+<section>
+  <p><strong>Source code available (RQ1.3)</strong></p>
+
+  <p>from 36 academic software available for download, 34 projects has their source code available</p>
+</section>
+
+<!-- -------------------------------- -->
+
+<section>
+  <p><strong>Software license available (RQ1.4)</strong></p>
+
+  <p>from 34 projects with the source code available, 13 did not provide any
+software license, and 21 used free software license</p>
+
+</section>
+
+<!-- -------------------------------- -->
+
+<!-- image source: https://upliftconnect.com/wp-content/uploads/2016/05/Gowing-.jpg -->
+<section data-background="/sbes2023/files/Gowing-.jpg" data-background-color="black">
+  <div class="box-green">
+    <h4 id="study-2">Study 2</h4>
+
+    <h3 id="life-cycle-of-academic-software">Life cycle of Academic Software</h3>
+
+    <p><em>evolution stage</em></p>
+  </div>
+</section>
+
+<!-- -------------------------------- -->
+
+<section data-transition="zoom">
+  <p><img src="/sbes2023/files/staged-model-foss-cycle-en.png" style="box-shadow:0px 0px 2px gray;background:white" /></p>
+
+  <p><small class="cite">
+CAPILUPPI, A. et al. 2007.
+<strong>Adapting the staged model for software evolution to free/libre/open source software</strong>.
+</small></p>
+</section>
+
+<!-- -------------------------------- -->
+
+<section>
+  <p><strong>Evolution stage of academic software (RQ2.1)</strong></p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Evolution stage</th>
+        <th>Academic Software</th>
+        <th>%</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Initial development</td>
+        <td>20</td>
+        <td>33%</td>
+      </tr>
+      <tr>
+        <td>Evolution</td>
+        <td>2</td>
+        <td>3%</td>
+      </tr>
+      <tr>
+        <td>Servicing</td>
+        <td>6</td>
+        <td>10%</td>
+      </tr>
+      <tr>
+        <td>Phaseout</td>
+        <td>3</td>
+        <td>5%</td>
+      </tr>
+      <tr>
+        <td>Closedown</td>
+        <td>24</td>
+        <td>40%</td>
+      </tr>
+      <tr>
+        <td>Unknown</td>
+        <td>5</td>
+        <td>8%</td>
+      </tr>
+    </tbody>
+  </table>
+
+</section>
+
+<!-- -------------------------------- -->
+
+<!-- image source: https://cdn-images-1.medium.com/max/2000/1*4d4rFBB97fgjZLetKypzxA.jpeg -->
+<section data-background="/sbes2023/files/1_4d4rFBB97fgjZLetKypzxA.jpeg">
+  <h4 id="study-3">Study 3</h4>
+
+  <h3 id="recognition-of-academic-software">Recognition of Academic Software</h3>
+
+  <p><em>number and types of mentions</em></p>
+</section>
+
+<!-- -------------------------------- -->
+
+<section>
+  <p>A <strong>mention</strong> means any occurrence of the name of the academic software in a
+scientific publication</p>
+</section>
+
+<!-- -------------------------------- -->
+
+<section>
+  <p><img width="100%" src="/sbes2023/files/study2-literature-review-big.png" style="background:white" /></p>
+</section>
+
+<!-- -------------------------------- -->
+
+<section>
+  <p><strong>Mentions to academic software (RQ3.1)</strong></p>
+
+  <p>only 2 projects – GUIZMO and protopurity – were not found in searches carried
+out in ACM and IEEE</p>
+</section>
+
+<!-- -------------------------------- -->
+
+<section>
+  <p><strong>Uses of academic software (RQ3.1)</strong></p>
+
+  <p>there are 124 “usage” mentions to a set of 26 projects</p>
+</section>
+
+<!-- -------------------------------- -->
+
+<section>
+  <p><strong>Contributions to academic software (RQ3.1)</strong></p>
+
+  <p>there are 43 “contribute” mentions to a set of 17 projects, that is, only 28%
+of projects received source code contributions from studies after its initial
+publication</p>
+</section>
+
+<!-- -------------------------------- -->
+
+<section data-background="#00bfff" data-background-transition="slide">
+  <h2 id="discussion-and-conclusions">Discussion and Conclusions</h2>
+</section>
+
+<!-- -------------------------------- -->
+
+<section>
+  <p>Evolution of the recognition of academic software for static analysis published in ASE and SCAM</p>
+
+  <p><img src="/sbes2023/files/mentions-type-by-year.png" style="box-shadow: 0px 0px 5px gray; border-radius: 5px; padding: 10px" /></p>
+</section>
+
+<!-- -------------------------------- -->
+
+<section>
+  <p>Growth of 38% per year in the number of mentions</p>
+
+  <p><img src="/sbes2023/files/mentions-trend-en.png" style="box-shadow: 0px 0px 5px gray; border-radius: 5px; padding: 10px; display: inline" /></p>
+</section>
+
+<!-- -------------------------------- -->
+
+<section>
+  <p>from 60 academic software projects of static analysis studied, 13 projects
+(22%) did not have academic recognition</p>
+</section>
+
+<!-- -------------------------------- -->
+
+<section>
+  <p>Influence of the life cycle stage on the recognition of academic software</p>
+
+  <p>large number of mentions for close-down projects – ESBMC, PARSEWeb, and
+TestEra – including recent publications between 2016 and 2017</p>
+</section>
+
+<!-- -------------------------------- -->
+
+<section>
+  <p>Academic software projects are not yet recognized by Science
+as first-class citizens</p>
+
+  <p><small class="cite">
+Carole Goble. 2014. <strong>Better software, better research</strong>.
+</small></p>
+</section>
+
+<!-- -------------------------------- -->
+
+<section>
+  <p><img src="/sbes2023/files/code-is-science-model-1.png" style="width: 40%;background:white;margin:0" /></p>
+
+  <p><a href="http://www.codeisscience.com">codeisscience.com</a></p>
+
+  <p><img width="60%" src="/sbes2023/files/software-carpentry-logo-shirt.png" style="width:40%;background:white;margin:0" /></p>
+
+  <p><a href="https://software-carpentry.org">software-carpentry.org</a></p>
+</section>
+
+<!-- -------------------------------- -->
+
+<section>
+  <h3 id="future-work">Future Work</h3>
+
+  <ul>
+    <li>Why some tools in closedown stage continue to be cited?</li>
+    <li>The results found regarding academic software recognition are similar to general software engineering publications?</li>
+  </ul>
+</section>
+
+    </div>
+  </div>
+  <script src="/sbes2023/javascript/reveal.js/lib/js/head.min.js"></script>
+  <script src="/sbes2023/javascript/reveal.js/js/reveal.js"></script>
+  <script>
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+      controls: true,
+      progress: true,
+      slideNumber: 'c/t',
+      history: true,
+      center: true,
+      fragments: true,
+      transition: 'slide', // none/fade/slide/convex/concave/zoom
+      backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
+      // Optional reveal.js plugins
+      dependencies: [
+        { src: '/sbes2023/javascript/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+        { src: '/sbes2023/javascript/reveal.js/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: '/sbes2023/javascript/reveal.js/plugin/zoom-js/zoom.js', async: true },
+        { src: '/sbes2023/javascript/reveal.js/plugin/notes/notes.js', async: true }
+      ]
+    });
+  </script>
+</body>
+</html>

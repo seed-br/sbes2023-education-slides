@@ -1,0 +1,30 @@
+
+\begin{table}[tbp]
+    \caption{Avaliação de FAIRness - Template.}
+    \centering
+    \small
+    \begin{tabular}{p{0.9cm}|p{5cm}|c|p{6cm}}
+    \hline
+    Princ. & Descrição & Atende? & Comentário 
+    \\ \hline
+     F1 & O software recebe um identificador globalmente único e persistente. & SIM & Parcialmente: Não possui um PID específico, mas pode ser facilmente encontrado em diferentes repositórios e registros, incluindo informações de versão. \\
+     F1.1 & Aos componentes do software que representam diferentes níveis de granularidade são atribuídos identificadores distintos. & & \\
+     F1.2 & As diferentes versões do software recebem identificadores distintos. & & \\
+     F2 & O software é descrito com metadados detalhados. & & \\
+     F3 & Os metadados contém de forma clara e explícita o identificador do software que descrevem. & & \\
+     F4 & Os metadados seguem os princípios FAIR, são pesquisáveis e indexáveis. & & \\
+     A1 & O software é pode ser obtido por meio de seu identificador utilizando um protocolo de comunicação padronizado. & YES & \textit{Both software and metadata are accessible through HTTPS ..: [..].} \\
+     A1.1 & O protocolo é aberto, gratuito e universalmente implementável. & & \\
+     A1.2 & O protocolo permite procedimentos de autenticação e autorização, quando necessário. & & \\
+     A2 & Os metadados são acessíveis, mesmo quando o software não está mais disponível. & & \\
+     I1 & O software lê, escreve e troca dados de acordo com padrões da comunidade relaionados ao domínio. & & \\
+     I2 & O software inclui referências qualificadas a outros objetos. & & \\
+     R1 & O software é descrito com uma variedade de atributos precisos e relevantes. & & \\
+     R1.1 & É atribuída uma licença clara e acessível ao software. & YES & 
+     \textit{Software: GNU General Public License as published by the Free Software Foundation, either version 3 of the license or later versions.} \\
+     R1.2 O software possui informações detalhadas de procedência. & & \\
+     R2 & O software inclui referências qualificadas a outros softwares. & & \\
+     R3 & O software atende aos padrões relevantes da comunidade do domínio. & & \\
+      \hline
+    \end{tabular} \label{tab:fairness}
+\end{table}

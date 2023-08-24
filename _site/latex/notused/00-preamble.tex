@@ -1,0 +1,97 @@
+%------------------------------------------------%
+\section*{Prefácio}
+\label{section:introduction}
+
+Nas últimas décadas, produtos de \textit{software} têm assumido um papel fundamental no âmbito da pesquisa científica, seja como parte do método científico ou como um de seus resultados. 
+%
+O reconhecimento da necessidade de reprodutibilidade na pesquisa científica, bem como o advento recente da criação de comitês de avaliação de artefatos de pesquisa em conferências e periódicos\footnote{bit.ly/3mit0XT},\footnote{https://2020.icse-conferences.org/track/icse-2020-rose} reforçam a recomendação para que, ao lado dos dados da pesquisa, o código-fonte ou o ambiente de execução do software desenvolvido no contexto de uma pesquisa científica sejam também disponibilizados. 
+
+\textit{Software de Pesquisa}\footnote{Tradução nossa para o termo \textit{Research Software}, termo utilizado ao longo do texto, sempre em itálico.} é o termo usado para denotar o software utilizado durante a pesquisa científica, incluindo o software desenvolvido especificamente no contexto da pesquisa, bem como o software de terceiros usado para coleta, processamento e análise de dados~\cite{allen_et_al:DM:2017:7146}.
+%
+O uso crescente de \textit{Software de Pesquisa}, em especial o software  desenvolvido pelos grupos de pesquisa, tem despertado na comunidade científica uma preocupação com sua sustentabilidade e influência em fundamentos do método científico.
+
+Na Engenharia de Software, o conceito de \textit{Sustentabilidade} está relacionado às consequências de longo prazo de projetar, construir e entregar um projeto de software. 
+%
+Para o Software de Pesquisa, sustentabilidade diz respeito à capacidade do software de perdurar e de continuar sendo suportado ao longo do tempo, o que implica nas qualidades de longevidade e manutenibilidade do software. 
+%
+A falta de sustentabilidade do Software de Pesquisa pode ferir um dos fundamentos da Ciência: a reprodutibilidade, ou a capacidade de reprodução de estudos científicos por pesquisadores independentes. 
+%Por que? erros, versões, .. falta de acesso, de visibilidade.
+
+Este curso apresenta uma introdução ao \textit{Software de Pesquisa}.
+
+\noindent\paragraph*{Objetivos do curso e tratamento dado ao tema.}
+
+O objetivo geral deste curso é informar e refletir com a audiência sobre princípios, conceitos e boas práticas para o desenvolvimento de \textit{Software de Pesquisa} sustentável, buscando promover a familiarização com o tema, analisando de maneira crítica o papel central do \textit{Software de Pesquisa} na Ciência e a importância de se desenvolver \textit{Software de Pesquisa} sustentável.
+
+São objetivos específicos do curso proposto:
+\begin{enumerate}
+    \item Motivar a audiência sobre o papel central do \textit{Software de Pesquisa} na Ciência e promover o reconhecimento de sua importância no contexto da pesquisa científica~\cite{goble2014better}, seja como ferramenta ou resultado;
+    \item Motivar a audiência a refletir sobre a necessidade de melhorar a qualidade do \textit{Software de Pesquisa} desenvolvido;
+    \item Destacar a importância de boas práticas de desenvolvimento de software no contexto do \textit{Software de Pesquisa};
+    \item Apresentar modelos de sustentabilidade do software que promovam fácil localização, acesso ao longo do tempo, e reuso do \textit{Software de Pesquisa}, evitando retrabalho, e em prol do  suporte à Reprodutibilidade da pesquisa.
+\end{enumerate}
+
+O tratamento dado ao tema é geral e teórico, com uso de exemplos ilustrativos e apresentação dos resultados de um estudo de caso piloto.
+%
+Em sua primeira parte (Parte 1), o curso abordará conceitos relacionados a \textit{Ciência Aberta} e seus princípios, \textit{Software de Pesquisa} e seus princípios, \textit{Sustentabilidade de Software} e \textit{Sustentabilidade do Software de Pesquisa}.
+%
+Na segunda parte do curso (Parte 2),  
+planejamos aprofundar aspectos específicos sobre boas práticas usadas do desenvolvimento de software livre e que podem ser recomendadas para o desenvolvimento de \textit{Software de Pesquisa} sustentável. 
+Ilustraremos e discutiremos tais práticas com base em informações extraídas de projetos de \textit{Software de Pesquisa} de código aberto.
+Finalmente, apresentaremos os resultados de um estudo piloto realizado com um grupo de pesquisa da área de Física que usa e desenvolve  \textit{Software de Pesquisa}.
+
+\noindent\paragraph*{Perfil desejado dos participantes.}
+
+Estudantes de graduação e pós-graduação, pesquisadores e profissionais da indústria (por exemplo, analistas e cientistas de dados) poderão se beneficiar do curso proposto.
+A audiência terá a oportunidade de conhecer e refletir sobre conceitos relacionados a \textit{Software de Pesquisa} e seus ecossistemas, e conhecer algumas práticas recomendadas para construir software de pesquisa sustentável em um ambiente colaborativo.
+
+Os seguintes pré-requisitos são recomendados para um melhor acompanhamento do curso, mas não obrigatórios:
+\begin{itemize}
+    \item Experiência em alguma linguagem de programação (por exemplo, C++, C, Fortran, Python, Ruby, Matlab ou R)
+    \item Interesse ou participação em atividades ligadas ao desenvolvimento de \textit{Software de Pesquisa}.
+\end{itemize}
+
+Não é necessário conhecimento prévio sobre \textit{Software de Pesquisa}, Ciência Aberta ou Sustentabilidade do Software, já que a primeira parte do curso se concentrará na apresentação destes e outros conceitos fundamentais. 
+
+\noindent\paragraph*{Organização do capítulo.}
+
+%Este capítulo está organizado em duas partes. A primeira parte  bla-bla ... inclui as seções \textit{1. Introdução} e \textit{2. Fundamentação Teórica}. A segunda parte bla-bla-bla ... inclui as seções \textit{3. Boas Práticas}, \textit{4. Estudo de Caso} e \textit{5. Considerações Finais}.
+
+
+%\part{\small{Introdução a Ciência Aberta, Software de Pesquisa e Sustentabilidade de Software (Duração: cerca de 90 minutos)}}
+
+%Na primeira parte do curso, \textit{Introdução a Ciência Aberta, Software de Pesquisa e Sustentabilidade de Software},
+
+Na Seção~\ref{subsection:openscience} apresentamos  conceitos de Ciência Aberta.
+
+Na Seção~\ref{sec:software:ciencia} 
+... impacto do Software na Ciência e para a Sociedade, em conjunto com artigos científicos publicados, dados abertos e outras contribuições científicas vitais.
+
+Na Seção~\ref{subsection:researchsoftware}, apresentaremos várias definições para o termo ``Software de Pesquisa'' (\textit{Research Software}), com base no trabalho de \cite{sochat_research_2022} e considerando diferentes contextos e perspectivas.
+%
+
+%
+Por fim, faremos uma breve discussão sobre tópicos relacionados, a saber, reconhecimento do \textit{Research Software} e citação adequada de \textit{Research Software} para que pesquisadores e desenvolvedores recebam crédito por seu trabalho.
+
+%, Software de Pesquisa e Sustentabilidade de Software, para contextualizar o Software de Pesquisa e a ...
+
+Os exemplos trazidos ao longo do texto virão de  projetos referenciados pelo \textit{Research Software Directory}\footnote{\url{https://research-software-directory.org}},
+um sistema de gerenciamento de conteúdo específico para software de pesquisa.
+
+Na Seção~\ref{section:practices}, apresentaremos um conjunto de boas práticas, técnicas e sociais, que podem ser adotadas no desenvolvimento de \textit{Software de Pesquisa} sustentável, com exemplos ilustrativos. 
+%Estas incluem, dentre outras, o uso de repositórios públicos, sistemas de controle de versão, colaboração por pares, revisão de código, testes automatizados, formatos e interfaces padrão e documentação relevante.
+
+%segunda parte do curso, \textit{Práticas para Desenvolvimento de Software de Pesquisa Sustentável}, seguimos o modelo adotado por projetos como \textit{Software Carpentry}\footnote{Projeto voluntário dedicado a ensinar habilidades básicas de computação para pesquisadores}~\cite{madicken_munk_2019_3264950, aleksandra_nenadic_2022_6532057}, \textit{Library Carpentry}\footnote{Comunidade global que ensina habilidades de software e dados para pessoas que trabalham em funções relacionadas a bibliotecas e informações}~\cite{madicken_munk_2019_3264950}, Netherlands eScience Center\footnote{Fundação independente baseada na Holanda para desenvolvimento e aplicação de software de pesquisa}~\cite{drost_niels_2020_4020622}, The Turing Way\footnote{Manual para ciência de dados reprodutível, ética e colaborativa}\cite{the_turing_way_community_2022_7625728} e por materiais desenvolvidos pelos autores deste curso.
+
+Seção~\ref{section:casesstudy} ... 
+
+Seção~\ref{section:conclusions} ...
+
+% In 2012 the Software Sustainability Institute ran a survey of researchers at 15 research-intensive universities in the UK to uncover their attitudes to software.
+
+%-----------------------------%
+%Nesta seção, apresentaremos a motivação do curso proposto, objetivos e o tratamento dado ao tema.
+
+%COLOCAR na seção~\ref{section:introduction} ...: Uma visão geral dos tópicos a serem cobertos e uma síntese sobre conceitos e discussões recentes sobre Ciência Aberta, \textit{Software de Pesquisa} e Sustentabilidade de Software.
+%Apresentaremos uma breve visão histórica e panorama geral de cada tópico e, por fim, a síntese do estado-da-arte e do estado-da-prática.
+%Dentre outros avanços, o estado-da-prática mostra uma tendência à  valorização da carreira do \textit{Engenheiro de Software de Pesquisa}\footnote{\textit{Research Software Engineer}} e à adoção de boas práticas de desenvolvimento, e destaca o surgimento de institutos internacionais para promoção da sustentabilidade do \textit{Software de Pesquisa}.

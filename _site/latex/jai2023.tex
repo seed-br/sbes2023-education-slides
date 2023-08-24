@@ -1,0 +1,82 @@
+\documentclass{SBCbookchapter}
+
+%\usepackage[latin1]{inputenc}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazil]{babel}
+\usepackage{graphicx}
+\usepackage[hyphens]{url}
+\usepackage[multiple]{footmisc}
+\usepackage{tcolorbox}
+\usepackage[shortlabels]{enumitem}
+\usepackage{listings}
+\usepackage{comment}
+\usepackage{longtable}
+
+\newcommand{\RS}{\hspace{.05em}\textit{software de pesquisa}\hspace{.05em}}
+\newcommand{\RSw}{\hspace{.05em}\textit{software de pesquisa}\hspace{.21em}}
+
+\author{Christina von Flach, Joenio M. Costa e Daniela Feitosa}
+\title{Princípios e Práticas para Sustentabilidade do Software de Pesquisa}
+
+%-- número de capítulo
+\setcounter{chapter}{3}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+The growing use of \textit{Research Software}, that is, software developed in the context of scientific research, has awakened in the scientific community a concern with its sustainability and influence on the ability to reproduce scientific studies by independent researchers.
+%
+\textit{Software sustainability} relates to the long-term consequences of designing, building and delivering a software project and concerns the software's ability to last and continue to be supported over time.
+%
+However, researchers are not familiar with good practices for developing sustainable software.
+%
+This course addresses the sustainability of research software from a technical perspective. We present best practices in software development that can be useful to support researchers from different areas in developing sustainable research software. We motivate and illustrate the use of practices, their benefits and related challenges using the results of a study conducted with a research group in the field of Physics.
+\end{abstract}
+
+
+\begin{resumo}
+O uso crescente de \textit{Software de Pesquisa}, isto é, software desenvolvido no contexto de uma pesquisa científica, tem despertado na comunidade científica uma preocupação com sua sustentabilidade e influência na capacidade de reprodução de estudos científicos por pesquisadores independentes.
+%
+O conceito de \textit{Sustentabilidade de Software} está relacionado às consequências de longo prazo de projetar, construir e entregar um projeto de software e diz respeito à capacidade do software de perdurar e ter suporte ao longo do tempo.
+%
+Entretanto, pesquisadores não estão familiarizados com boas práticas de desenvolvimento de software sustentável.
+%
+Este curso aborda a sustentabilidade do Software de Pesquisa sob uma perspectiva técnica. Apresentamos boas práticas de desenvolvimento de software que podem ser úteis para apoiar pesquisadores de diferentes áreas no desenvolvimento de software de pesquisa sustentável. Nós motivamos e ilustramos o uso das práticas, seus benefícios e desafios relacionados por meio dos resultados de um estudo conduzido com um grupo de pesquisa da área de Física.
+\end{resumo}
+
+%\tableofcontents
+
+%--------------------------------%
+
+% begin body
+
+%\part{} 
+
+\input{JAI 2023/sections/introducao}
+\input{JAI 2023/sections/cienciaaberta}
+\input{JAI 2023/sections/papeldosoftware}
+\input{JAI 2023/sections/softwaredepesquisa}
+
+%\part{} 
+
+\input{JAI 2023/sections/desenvolvimento}
+\input{JAI 2023/sections/praticas}
+\input{JAI 2023/sections/estudo-mosyn}
+\input{JAI 2023/sections/conclusao}
+% end body
+
+%--------------------------------%
+
+\bibliographystyle{sbc}
+\bibliography{jai2023}
+
+% Removed
+%\appendix
+%\input{JAI 2023/sections/seed-select}
+%\input{JAI 2023/sections/estudo-flosssearch}
+%\input{JAI 2023/sections/estudo-seed-refactoring}
+%\input{JAI 2023/sections/autores}
+
+\end{document}

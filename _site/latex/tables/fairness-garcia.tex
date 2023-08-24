@@ -1,0 +1,61 @@
+% https://github.com/mpnetto/MoSyn
+
+\begin{table}[tb]
+    \caption{\textit{FAIRness} no Software MoSyn -- \textit{Findable}.}
+    \centering
+    \small
+    \begin{tabular}{p{0.9cm}|p{5cm}|c|p{5.25cm}}
+    \hline
+    Princ. & Descrição & Atende? & Comentário 
+    \\ \hline
+     F: & O software e seus metadados associados são facilmente encontrados tanto por humanos quanto por máquinas. & \textit{Parcialmente} &  \\
+     F1 & O software recebe um identificador globalmente único e persistente. & \textit{Parcialmente} & O software possui uma identidade única apenas no GitHub e não é garantida a persistência. \\
+     F1.1 & Aos componentes do software que representam diferentes níveis de granularidade são atribuídos identificadores distintos. & Sim & \\
+     F1.2 & As diferentes versões do software recebem identificadores distintos. & Sim & \\ \hline
+     F2 & O software é descrito com metadados detalhados. & \textit{Parcialmente} & O software menciona alguns metadados, mas sem muitos detalhes que permitam encontrar o software facilmente \\
+     F3 & Os metadados contêm de forma clara e explícita o identificador do software que descrevem. & \textit{Parcialmente} & Os metadados não apresentam de forma clara, mas é possível obter a partir do \textit{commit} \\
+     F4 & Os metadados seguem os princípios FAIR, são pesquisáveis e indexáveis. & \textit{Parcialmente} & Há informações nos arquivos do repositório, mas não há descrição na configuração do projeto para facilitar indexação \\
+      \hline
+    \end{tabular} \label{tab:fairness:garcia:f}
+\end{table}
+
+     
+\begin{table}[tb]
+    \caption{FAIRness no Software MoSyn -- \textit{Accessible}.}
+    \centering
+    \small
+    \begin{tabular}{p{0.9cm}|p{4.9cm}|c|p{5.5cm}}
+    \hline
+    Princ. & Descrição & Atende? & Comentário 
+    \\ \hline
+     A: & O software e seus metadados podem ser obtidos através de protocolos padronizados. & \textit{Parcialmente} &\\
+     A1 & O software é pode ser obtido por meio de seu identificador utilizando um protocolo de comunicação padronizado. & Sim &\\
+     A1.1 & O protocolo é aberto, gratuito e universalmente implementável. & Sim &\\
+     A1.2 & O protocolo permite procedimentos de autenticação e autorização, quando necessário. & Sim &\\
+     A2 & Os metadados são acessíveis, mesmo quando o software não está mais disponível. & Não & Caso o software não esteja mais disponível, os metadados também ficarão inacessíveis\\
+      \hline
+    \end{tabular} \label{tab:fairness:garcia:a}
+\end{table}
+
+     
+\begin{table}[tb]
+    \caption{FAIRness no Software MoSyn -- \textit{Interoperable, Reusable}.}
+    \centering
+    \small
+    \begin{tabular}{p{0.9cm}|p{6cm}|c|p{4.3cm}}
+    \hline
+    Princ. & Descrição & Atende? & Comentário 
+    \\ \hline
+     I: & O software interopera com outros softwares, trocando dados e/ou metadados através da interação via APIs, descrito por meio de padrões. &  &  \\
+     I1 & O software lê, escreve e troca dados de acordo com padrões da comunidade relacionados ao domínio. & \textit{Parcialmente} & Não está explícito como a troca de dados ocorre com o MATLAB \\
+     I2 & O software inclui referências qualificadas a outros objetos. & \textit{Parcialmente} & As referências se resumem a menção sobre utilização, sem citar nomes, websites ou detalhes dos outros objetos \\
+     \hline
+     R: & O software é utilizável (pode ser executado) e reutilizável (pode ser compreendido, modificado, aprimorado ou incorporado a outros softwares). & \textit{Parcialmente} & \\
+     R1 & O software é descrito com uma variedade de atributos precisos e relevantes. & \textit{Parcialmente} & Não há muitas informações sobre atributos e como reutilizar o software \\
+     R1.1 & É atribuída uma licença clara e acessível ao software. & Sim &  \textit{MIT License.} \\
+     R1.2 & O software possui informações detalhadas de procedência. & \textit{Parcialmente} & Não há informações sobre como o software foi desenvolvido ou quais foram as intenções originais \\
+     R2 & O software inclui referências qualificadas a outros softwares. & \textit{Parcialmente} & Não há informações relevantes sobre dependências. \\
+     R3 & O software atende aos padrões relevantes da comunidade do domínio. & Sim & \\
+      \hline
+    \end{tabular} \label{tab:fairness:garcia:ir}
+\end{table}

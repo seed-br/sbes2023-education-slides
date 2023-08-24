@@ -1,0 +1,143 @@
+\section{Software de Pesquisa}
+\label{section:researchsoftware}
+
+\subsection{Definição}
+% definition of Research Software as a separate metaphor of software in research.
+
+O termo \textit{software de pesquisa} foi criado para designar, de modo abrangente, o software \textit{utilizado} durante a pesquisa científica, incluindo o software de terceiros usado para coleta, processamento e análise de dados~\cite{allen_et_al:DM:2017:7146}.
+%
+%Additional software components (e.g., operating systems, libraries, dependencies, packages, scripts, etc.) that are used for research but were not created during or with a clear research intent should be considered software in research and \textbf{not} Research Software.
+%
+No contexto de avaliação de qualidade do software de pesquisa,
+\cite{gruenpeter_morane_2021_5504016} adotam uma visão mais restrita, e consideram que sistemas operacionais, bibliotecas, dependências, pacotes e \textit{scripts} utilizados na pesquisa científica, mas que não foram criados durante ou com uma intenção de pesquisa clara, são \textit{software usado na pesquisa} mas \textit{não são software de pesquisa}.
+% RS should be FAIR! \cite{gruenpeter_morane_2021_5504016}.
+% Esta definição erviu para definir o escopo e guiar o trabalho sobre FAIR4RS, identificando os artefatos de software que poderiam ser avaliados segundo tais princípios.
+%
+No restante deste capítulo, adotaremos a visão de software de pesquisa de~\cite{gruenpeter_morane_2021_5504016}: 
+
+\textit{Software de Pesquisa é o software desenvolvido durante o processo de pesquisa e inclui (mas não está limitado a) código-fonte, algoritmos, \textit{scripts}, fluxos de trabalho computacionais e executáveis.} 
+
+%\subsection{Caracterização}
+
+O \RSw é parte integrante do ecossistema de pesquisa moderno,
+sendo amplamente utilizado nas Ciências e Engenharias para gerar resultados que servem como evidência em publicações científicas. 
+Em geral, devido à complexidade em desenvolver software e ao conhecimento de domínio especializado necessário, os próprios pesquisadores desenvolvem o \RSw ou estão intimamente envolvidos com o seu desenvolvimento~\cite{carver:icse:2007}.
+% Carver survey identifies the steps involved in developing scientific software (i.e. the life cycle, the workflows, technical challenges, and organizational challenges).
+
+Há várias preocupações relacionadas à \textit{natureza} e à \textit{qualidade} do \RS. 
+%
+Como artefato digital, ele pode assumir muitas formas, por exemplo, um \textit{script} shell bash, com apenas 50 linhas para manipular e filtrar arquivos, um conjunto de \textit{scripts} R de 100 linhas para análise de dados, 10.000 linhas de código Java para software de análise de dívida técnica ou 50.000 linhas de C++ para análise de imagens médicas. 
+%Pode ser escrito em linguagens de \textit{script} como Unix shell, Python, R ou MATLAB ou em linguagens de programação como C, C++, Fortran ou Java. 
+%
+% Ele pode ser hospedado e distribuído de várias maneiras, incluindo repositórios abertos digitais (GitHub, BitBucket, GitLab), projetos como Software Heritage, websites de projetos de pesquisa, pastas FTP, e redes para arquivamento e gerenciamento de artefatos, por exemplo, CRAN (Comprehensive R Archive Network), CPAN (Comprehensive Perl Archive Network), PyPI (Python Package Index), e NPM (Node Package Manager).
+
+%Figura~\ref{fig:mindmap} ... De onde veio mesmo? % (nao sei de onde veio -- joenio)
+%\begin{figure}[tbp]
+%    \centering
+%    \includegraphics[scale=0.28]{JAI 2023/figures/RS-typology.png}
+%    \caption{Figura do mindmap -- ontologia [CITAR]}
+%    \label{fig:mindmap}
+%\end{figure}
+%
+Como produto de software, o \RSw deve considerar alguns atributos de qualidade desejáveis.
+%, sob diferentes perspectivas, por exemplo, usuários, desenvolvedores, e outros interessados. 
+Por exemplo, é desejável que o \RSw seja confiável, eficiente, fácil de usar, fácil compreender, testar, reparar, estender ou adaptar.
+%Podemos considerar que tais atributos podem estar associados ao software ou ao seu processo de desenvolvimento.
+% 
+Em especial, há uma preocupação com a sustentabilidade do \RSw e sua influência na reprodutibilidade da pesquisa científica.
+
+Neste capítulo, apresentamos aspectos relacionados à  sustentabilidade do \RSw e boas práticas para o desenvolvimento de software sustentável, a saber: 
+registro e identificação do software, licenças de software e grau de abertura (\textit{openness}), reconhecimento e citação do software, comunidade e usuários, longevidade e manutenibilidade, aderência aos princípios FAIR para software, avaliação do \RS e sua influência na reprodutibilidade científica.
+
+%All research software is open
+%All research software is high-quality and robust
+%All research software is findable, accessible, and usable & used by others (for their own research), and is cited when it is used
+%All contributors to research software are recognized for their work, with good careers
+%All research software is sustained as long as it is useful
+%All research is reproducible
+
+\input{JAI 2023/sections/sustentabilidade}
+
+\input{JAI 2023/sections/fair4RS}
+
+\input{JAI 2023/sections/reprodutibilidade}
+
+%---------------------------------%
+\subsection{Avaliação de \RS}
+
+Consideramos a avaliação do \RSw sob duas perspectivas: (1)~sustentabilidade ou direcionada a sua longevidade, e (2)~aderência aos princípios FAIR (\textit{FAIRness}) ou direcionada ao grau de abertura (\textit{openness}) do \RS.
+
+%Os princípios FAIR são critérios de referência para promover e avaliar a abertura (\textit{openness}) dos dados e do software de pesquisa.
+
+\subsection*{Sustentabilidade}
+
+A avaliação da sustentabilidade do \RSw busca determinar se o mesmo é sustentável com base em critérios relevantes para o ecossistema científico.
+Em geral, a avaliação não gera um resultado \textit{é sustentável/não é sustentável}, mas tende a 
+valorizar pontos fortes do software e identificar pontos para sua melhoria. A avaliação pode considerar atributos ou práticas usadas no desenvolvimento do software para 
+prover uma visão geral ou detalhada da sustentabilidade do \RS.
+
+O Instituto de Sustentabilidade de Software (SSI)
+fornece um serviço de avaliação quantitativa do software baseada em critérios relacionados a sustentabilidade, manutenibilidade e usabilidade\footnote{
+O questionário do SSI para avaliação de sustentabilidade está disponível em \url{http://www.software.ac.uk/online-sustainability-evaluation.}}.
+%
+A avaliação é feita com base em respostas dadas a um conjunto
+de perguntas simples, seguidas por explicações sobre a importância de algumas práticas e recomendações. 
+O conjunto de perguntas é aplicável para \RS.
+
+Por exemplo, para uma resposta negativa para a pergunta 
+``\textit{Seu \RSw está disponível como um pacote que pode ser instalado sem compilar?}'', a avaliação oferece a recomendação geral 
+``Construir software pode ser complicado e demorado. Fornecer seu \RSw como um pacote que pode ser implantado sem compilar pode economizar tempo e esforço dos usuários, especialmente se não forem desenvolvedores de software. Idealmente, deve-se observar e testar se o \RSw é compilado e executado em diversas plataformas para as quais ele oferece suporte, para então prover pacotes para sua distribuição.'' 
+%, o que significa que você já terá criado pacotes que podem ser distribuídos para seus usuários.
+
+% \textit{Seu site e documentação fornecem uma visão geral clara e de alto nível do seu software?}, \textit{Seu software está disponível como um pacote que pode ser instalado sem compilar?}, \textit{Você publica seu histórico de lançamentos, por exemplo, dados de lançamento, números de versão, principais recursos de cada lançamento, etc., em seu site ou em sua documentação?},  \textit{Você tem um conjunto de testes automatizados para seu software?} ou \textit{Há uma citação recomendada para seu software?}.
+
+Em nossa pesquisa, a avaliação de sustentabilidade  é simples, baseada em práticas, e busca determinar se um \RSw foi desenvolvido seguindo boas práticas que potencialmente o qualificariam como software sustentável. As práticas usadas em nossas avaliações estão relacionadas a identidade e disponibilidade do software, adoção de licenças, controle de versão, documentação, estrutura do código-fonte, testes, política de contribuidores e suporte, entre outras. 
+O resultado de cada avaliação é sintetizado em uma tabela
+e apresentado em um relatório simples.
+%
+A Tabela~\ref{tab:ssi:criteria:template} mostra práticas e aspectos que consideramos na avaliação da sustentabilidade 
+de \RS.
+%e do eventual desenvolvimento de novo software para substituí-lo. 
+\input{JAI 2023/tables/ssi-criteria-template}
+
+\subsection*{\textit{FAIRness}}
+
+A avaliação de \textit{FAIRness} do \RSw pode ser definida como um processo de avaliação do seu grau de aderência aos princípios FAIR adaptados para software.
+É importante lembrar que os princípios FAIR não são prescritivos, mas buscam oferecer uma visão para melhorar o compartilhamento e a reutilização de dados ou software por pessoas e máquinas~\cite{Wilkinson2016,chue_hong_fair_2022}.
+%
+Ainda assim, a avaliação de \textit{FAIRness} para software pode servir para apoiar a decisão de usuários e desenvolvedores sobre uma eventual adoção do \RSw em seu projeto de pesquisa.
+
+No estudo apresentado neste capítulo, consideramos a versão mais recente dos princípios FAIR para software~\cite{barker:2022}.
+
+
+
+
+
+
+%A Tabela~\ref{tab:fairness:parcial} mostra a avaliação parcial de \textit{FAIRness} de um \RS~\cite{lamprecht:2020}.
+%\input{JAI 2023/tables/fairness-template-parcial}
+
+%A sustainability assessment can be defined as the process of identifying, measuring, and evaluating the potential impacts of alternatives for sustainability (Devuyst, 2000). 
+
+% Relevance analysis -- is sustainability relevant?
+% Scoping analysis -- what are the extent/depth, procedures and tools for the assessment?
+% Impact analysis -- what are the short- and long-term economic, environmental and social impacts?
+%  Comparative analysis -- what are the major synergies, conflicts and trade-offs?
+% Associative analysis -- what measures can be put in place to mitigate harmful impacts?
+% Political analysis -- which path is the least-cost (economic, environmental and social) option?
+
+% Sustainability assessments can be broadly defined as processes that “direct the planning and decision-making process toward achieving sustainable development” (Hacking and Guthrie, 2008). Alternatively, sustainability assessment may be defined as processes integrating natural and societal systems, addressing both local and global dimensions, and covering both short-term and long-term perspectives (Ness et al., 2007), or processes determining whether an initiative is sustainable or not (Pope et al., 2004), or an evaluation against a set of sustainability principles 
+\begin{comment}
+Planos de gerenciamento de dados e software podem ser úteis para
+fornecer um mecanismo para avaliação em diferentes pontos de verificação. Por exemplo, o plano de gerenciamento de software (SMP) ELIXIR\footnote{\url{https://github.com/elixir-europe/smp}} foi criado com o objetivo de elevar a qualidade e sustentabilidade do \RS, produzindo, promovendo, medindo e adotando as melhores práticas aplicadas ao ciclo de vida do desenvolvimento de software~\cite{elixir:smp}.
+
+O projeto \textit{FAIRsFAIR} desenvolveu uma ferramenta de avaliação chamada \textit{FAIR-Aware}\footnote{\url{https://fairaware.dans.knaw.nl}} para ajudar pesquisadores a entender e melhorar a aderência de sua pesquisa aos princípios FAIR.
+\end{comment}
+\begin{comment}
+SMP
+
+Ao desenvolver um software de pesquisa, é fácil focar apenas em objetivos e atividades, como colaborar com outros pesquisadores, escrever artigos, participar de conferências e solicitar financiamento. Juntas, as demandas da prática diária de pesquisa podem conspirar para impedir o planejamento adequado para o desenvolvimento de software de pesquisa.
+
+Um Plano de Gerenciamento de Software (SMP) pode ajudá-lo a definir um conjunto de estruturas e objetivos para entender seu software de pesquisa, incluindo o que você vai desenvolver; para quem é o software (mesmo que seja apenas para você); como você entregará seu software aos usuários pretendidos; como isso os ajudará; e como você avaliará se isso os ajudou e contribuiu para a pesquisa da maneira que você pretendia. Um SMP também ajuda você a entender como você pode apoiar aqueles que desejam ou usam seu software de pesquisa; como seu software se relaciona com outros artefatos em seu ecossistema de pesquisa; e como você garantirá que seu software permaneça disponível além da vida útil de seu projeto atual.
+
+\end{comment}

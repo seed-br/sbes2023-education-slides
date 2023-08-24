@@ -1,0 +1,58 @@
+%------------------------------------------------%
+\section{Introdução}
+\label{section:introduction}
+
+Nas últimas décadas, produtos de \textit{software} têm assumido um papel fundamental no âmbito da pesquisa científica.
+%
+Na Ciência Aberta~\cite{unesco:2021}, ao lado dos dados de pesquisa, o software desempenha um papel central, seja como parte do método científico ou como um de seus resultados~\cite{training:handbook}.
+
+Coletar e analisar dados, construir e testar modelos tornaram-se atividades complexas em quase todas as áreas de pesquisa, das ciências exatas às ciências humanas.
+%
+\cite{hettrick2014uk} relataram que 92\% dos cientistas do Reino Unido usavam software em suas pesquisas, 69\% declararam que a pesquisa não poderia ser realizada sem software, e 56\% desenvolviam seu próprio software, sendo que 21\% destes não possuíam treinamento em desenvolvimento de software.
+%
+A capacidade de lidar com tal complexidade depende de software especializado, chamado de \textit{software científico}~\cite{hannay:2009}, \textit{software acadêmico} \cite{howison2011scientific} ou \textit{software de pesquisa}.
+
+O termo \textit{Software de Pesquisa}\footnote{Tradução nossa para \textit{Research Software}. O termo \textit{Software de Pesquisa} será utilizado ao longo do texto, sempre em itálico.} foi criado para designar, de modo abrangente, o software utilizado durante a pesquisa científica, incluindo o software de terceiros usado para coleta, processamento e análise de dados~\cite{allen_et_al:DM:2017:7146}.
+Recentemente, o uso do termo foi restrito para designar apenas \textit{o software desenvolvido especificamente no contexto da pesquisa}~\cite{nieuwpoort_defining_2023},
+com recomendação para que, ao lado dos conjuntos de dados da pesquisa, o código-fonte ou o ambiente de execução do \RSw também sejam disponibilizados.
+%
+Em tal contexto, há uma preocupação legítima por parte da comunidade científica com a qualidade do \RSw, em especial, a sua sustentabilidade~\cite{carver:rs:2022}. 
+A falta de sustentabilidade do \RSw pode ferir a reprodutibilidade na pesquisa, ou a capacidade de reprodução de estudos científicos por pesquisadores independentes, podendo ocasionar graves erros em conclusões centrais da Ciência~\cite{merali2010computational}.
+
+O conceito de \textit{sustentabilidade de software} está relacionado às consequências de longo prazo de projetar, construir e entregar um projeto de software \cite{venters_2014,venters_software_2021}.
+Para o \RS, sustentabilidade diz respeito à capacidade do software de perdurar e de continuar sendo suportado ao longo do tempo, o que implica em qualidades de longevidade e manutenibilidade.
+O \RSw sustentável deve permanecer utilizável por um longo período de tempo e retornar resultados consistentes (mesmo diante de software e hardware em evolução), com benefícios para a comunidade de pesquisa.
+O \RSw sustentável precisa ser atualizado, adaptado para novos ambientes e plataformas e testado.
+
+\cite{carver:rs:2022} realizaram uma pesquisa com 1.149 pesquisadores para identificar os desafios relacionados a sustentabilidade enfrentados no desenvolvimento e uso de software de pesquisa. 
+Dentre os resultados, a pesquisa identificou que (i)~o \RSw é desenvolvido e gerenciado sem considerar sua sustentabilidade no longo prazo e, 
+(ii)~há necessidade de treinamento para os desenvolvedores de \RSw sobre o ciclo de vida do software e ferramentas para seu desenvolvimento e manutenção.
+De fato, grande parte dos cientistas que escrevem \RSw ainda carecem de uma formação em boas práticas de engenharia de software voltadas para o desenvolvimento de software sustentável, por exemplo, uso de sistemas de controle de versão, documentação adequada e testes automatizados.
+Neste cenário, a sustentabilidade do \RSw pode ficar comprometida, levar a erros em conclusões científicas e à falta de reprodutibilidade na pesquisa.
+
+Além das preocupações com sustentabilidade, e considerando que software é um artefato de pesquisa digital, o princípio da reprodutibilidade requer que, assim como os dados de pesquisa~\cite{Wilkinson2016}, o \RSw seja \textit{FAIR}, isto é, facilmente localizável, acessível, interoperável e reutilizável~\cite{chue_hong_fair_2022}.
+Finalmente, é importante considerar que a escolha de um software ou de uma versão do mesmo software pode ter influência nos resultados da pesquisa: 
+as versões do software podem ter funcionalidades parecidas mas com diferenças não documentadas que podem levar as resultados diferentes.
+
+Este capítulo apresenta uma introdução ao \RS, contextualizado no universo da Ciência Aberta, e caracterizado com base em
+princípios científicos e práticas da engenharia de software, 
+buscando destacar o seu papel na promoção da pesquisa sustentável e reprodutível.
+
+% O principal objetivo deste capítulo é ajudar a esclarecer esses conceitos e explicar a sua importância no contexto da Ciência Aberta.
+
+As definições apresentadas sobre Ciência Aberta têm como base 
+a Recomendação da UNESCO sobre Ciência Aberta~\cite{unesco:2021} 
+e o Manual de Treinamento em Ciência Aberta~\cite{training:handbook}, disponibilizado sob a licença Creative Commons CC0 1.0 Universal (CC0 1.0) Dedicação ao Domínio Público\footnote{\url{https://creativecommons.org/publicdomain/zero/1.0/}}. 
+%
+As práticas para o desenvolvimento de \RSw sustentável apresentadas têm como base parte do material público disponibilizado por
+\textit{Software Carpentry}~\cite{madicken_munk_2019_3264950, aleksandra_nenadic_2022_6532057}, 
+\textit{Library Carpentry}~\cite{madicken_munk_2019_3264950}, 
+\textit{Netherlands eScience Center}~\cite{drost_niels_2020_4020622} e 
+\textit{The Turing Way}~\cite{the_turing_way_community_2022_7625728}.
+%
+Finalmente, os exemplos e o material de um estudo realizado com um grupo de pesquisa na área de Física foram criados pelos autores especialmente para este curso e estão disponíveis sob a licença 
+licença Creative Commons CC0 1.0 Universal (CC0 1.0)
+Dedicação ao Domínio Público.
+
+% Write programs for people, not computers.
+

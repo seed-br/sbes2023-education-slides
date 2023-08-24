@@ -1,0 +1,61 @@
+\subsection{\textit{FAIRness}}
+\label{subsection:fair:software}
+
+%Computational research should be FAIR: Findable, Accessible, Interoperable, Reusable. [CITAR algo]
+% A modified version of these principles can be usefully applied to software too:  it should be Findable, Accessible, Reusable and Extensible. [Software as Output]
+
+Os princípios FAIR~\cite{Wilkinson2016} foram especificados para melhorar o reuso de dados de pesquisa digitais, tornando-os mais fáceis de encontrar, acessíveis, interoperáveis e reutilizáveis (\textbf{F}indable, \textbf{A}ccessible, \textbf{I}nteroperable, \textbf{R}eusable).
+%
+Tais princípios abordam a \textit{forma} de fornecer artefatos para a comunidade científica, mas não tratam do conteúdo funcional ou da qualidade dos artefatos~\cite{lamprecht:2020}.
+%\textbf{F}indability, \textbf{A}ccessibility, \textbf{I}nteroperability, \textbf{R}eusability.
+Os \textit{Princípios FAIR para Dados de Pesquisa}~\cite{Wilkinson2016}, 
+incluindo quatro princípios fundamentais e 15 princípios norteadores, estabelecem que os dados de pesquisa devem ser facilmente localizáveis, acessíveis, interoperáveis e reutilizáveis. 
+
+Segundo~\cite{chue_hong_fair_2022}, o \RSw deve seguir os princípios FAIR usados para dados abertos, considerando-se que
+o software também é um artefato de pesquisa digital e, como tal, deve ser facilmente localizável, acessível, interoperável e reutilizável. 
+%
+Os \textit{Princípios FAIR para Software de Pesquisa} (FAIR4RS) foram definidos a partir de uma reformulação dos princípios FAIR originais para dados abertos~\cite{lamprecht:2020,chue_hong_fair_2022,barker:2022}.
+É importante destacar que, diferentemente dos dados, o software não é um artefato estático e só pode ser (re)utilizado se for sustentável~\cite{lamprecht:2020}.
+%
+A Tabela~\ref{tab:fairness:4:rs:r} apresenta a versão mais recente dos princípios FAIR para \RS.
+
+\textit{Projetos de Software Livre} seguem os princípios FAIR. %recomendados para \RS.
+Software livre pode ser localizado em repositórios com base em identificadores e descritores, utilizando diversos critérios como palavras-chave, linguagem de programação, versão do software, entre outros. 
+A acessibilidade é encorajada em software disponível em repositórios abertos, com licenças de compartilhamento explícitas e bem definidas e documentação associada. 
+A definição de interfaces de programação, formatos de entrada/saída e uso de padrões promovem a interoperabilidade e o reúso por vários grupos de pesquisa.
+Nessa perspectiva, as práticas usadas no modelo de desenvolvimento de software livre podem ser adotadas no desenvolvimento e evolução de \RS~\cite{flach:sbc:2021}. 
+%\footnote{\url{https://www.sbc.org.br/component/flippingbook/book/53/1?page=1}}
+
+\input{JAI 2023/tables/fairness-for-software}
+
+%Lots of work beyond FAIR: quality, correctness, reproducibility, openness, ...
+
+%---------------------------------------------%
+%Possivel referencia para avaliar se inclui ou nao: https://www.youtube.com/watch?v=67Uc1EEVDv8&t=953s
+
+%O uso de \textit{Software de Pesquisa} é mencionado na literatura por meio de citação formal ou informal~ \cite{smith2016software} e está estreitamente relacionado ao sistema econômico de reputação científica, uma vez que tais menções causam impacto científico direto tanto na publicação quanto no ecossistema de software de pesquisa \cite{katz2014transitive}.
+
+%Conhecimento novo é claramente construído a partir do conhecimento passado e o sistema de citações formais tem promovido avanços significativos \cite{katz2014transitive}.
+% No entanto, isso não tem funcionado tão bem para produtos digitais como o software que, muitas vezes, dependem de outro software, fragmentos de código, e algoritmos \cite{katz2014transitive}.
+
+
+\begin{comment}
+\begin{table}[btp]
+\begin{tcolorbox}[colback=white,title=Princípios FAIR para Software]
+  \begin{description}
+    \item \textbf{Localizável} \textit{(\textbf{F}indable)}
+    
+        O Software possui um rico conjunto de metadados e um identificador único e persistente que facilita sua busca e identificação.
+    \item \textbf{Acessível} \textit{(\textbf{A}ccessible)}
+    
+        Os metadados do Software estão organizados e especificados em um formato legível para pessoas e máquinas. O Software e metadados devem estar depositados em repositórios públicos e reconhecidos pela comunidade.
+    \item \textbf{Interoperável} \textit{(\textbf{I}nteroperable)}
+    
+        O Software usa padrões e plataformas reconhecidos pela comunidade possibilitando a integração com outras ferramentas e sistemas.
+    \item \textbf{Reutilizável} \textit{(\textbf{R}eusable)}
+    
+        O Software possui uma licença e documentação que permitem sua adoção e extensão por outros pesquisadores e desenvolvedores. 
+    \end{description}
+\end{tcolorbox}
+\end{table}
+\end{comment}

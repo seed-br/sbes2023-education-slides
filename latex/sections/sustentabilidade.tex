@@ -1,0 +1,83 @@
+%--------------------------------------------% 
+\subsection{Sustentabilidade}
+\label{subsection:srs}
+%--------------------------------------------% 
+
+% O desenvolvimento sustentável atende às necessidades do presente sem comprometer a capacidade das gerações futuras de atender às suas próprias necessidades. O desenvolvimento sustentável exige esforços conjuntos para a construção de um futuro inclusivo, sustentável e resiliente para as pessoas e o planeta.
+
+\textit{Sustentabilidade} é um dos princípios norteadores da Ciência Aberta~\cite{unesco:2021} e define que a mesma
+deve se basear em práticas, serviços, infraestruturas e modelos de financiamento de longo prazo que garantam a participação igualitária dos indivíduos que produzem ciência originários de instituições e países menos privilegiados. 
+As infraestruturas científicas abertas devem ser organizadas e financiadas com base em uma visão essencialmente sem fins lucrativos e de longo prazo, que aprimorem as práticas de Ciência Aberta e garantam o acesso permanente e irrestrito a todos, na medida do possível.
+%
+No contexto da Ciência Aberta e sua dependência 
+no código aberto (Seção~3.2.5), observa-se uma preocupação crescente com a sustentabilidade do software usado ou desenvolvido durante a pesquisa, em especial, com a longevidade e disponibilidade do software, e seu impacto na reprodutibilidade científica.
+%
+
+% Desenvolvimento sustentável, definido pela Comissão Brundtland [Brundtland, 1997] trata de "satisfazer as necessidades do presente sem comprometer a capacidade das gerações futuras de atender às suas próprias necessidades".
+
+O tema Sustentabilidade, inicialmente associado ao campo da Ecologia, agora faz parte dos interesses de outras áreas do conhecimento, ainda que adaptado às especificidades de cada uma. 
+Na Ciência da Computação, a preocupação com a sustentabilidade emerge como um tópico importante em diversas subáreas, incluindo Inteligência Artificial, Computação de Alto Desempenho, Interação Humano-Computador, Computação Científica e Engenharia de Software \cite{venters_software_2021}.
+Sustentabilidade é um desafio a ser enfrentado, não um problema a ser resolvido~\cite{becker_2014}.
+
+O \textit{Manifesto de Karlskrona} para o Design Sustentável~\cite{becker_2014}
+define que sustentabilidade é, em sua essência, um conceito sistêmico, multi-facetado e deve ser entendida em um conjunto de cinco dimensões:
+recursos ambientais, social, bem-estar individual, prosperidade econômica e viabilidade técnica de longo prazo.
+
+Neste capítulo, abordamos aspectos da dimensão técnica da sustentabilidade do
+software~\cite{DBLP:conf/re/KehrerP18} e, de forma complementar, elementos de sua dimensão social~\cite{DBLP:journals/sigsoft/Souza23}. 
+% ou questões sócio-técnicas, e 
+Não trataremos de aspectos da Engenharia de Software Verde~\cite{ivan:green:2018}\footnote{A Engenharia de Software Verde leva em consideração práticas e arquitetura de software, design de hardware e \textit{data center}, o mercado de eletricidade e mudanças climáticas, visando gerar menos emissões de gases de efeito estufa e reduzir produção de carbono de uma empresa~\cite{ivan:green:2018}.}.
+
+\subsection*{Sustentabilidade de Software}
+\label{subsection:sustainability}
+
+Na Engenharia de Software, há duas linhas de pesquisa voltadas para Sustentabilidade que se destacam: 
+(i)~Sustentabilidade de Software, e 
+(ii)~Engenharia de Software para Sustentabilidade (SE4S). 
+%
+A pesquisa sobre \textit{Sustentabilidade de Software} tem como preocupação central a capacidade do software de perdurar ao longo do tempo,
+enquanto que a pesquisa relacionada a SE4S preocupa-se com
+sistemas intensivos em software, como integrar a sustentabilidade em seus processos de desenvolvimento de software
+e apoiar a sustentabilidade ambiental
+na ampla variedade de domínios em que o software é implantado \cite{venters_software_2021}.
+%
+%Entre estes dois universos há ainda um grande espaço para debate e construção de um entendimento comum sobre os conceitos fundamentais de sustentabilidade e como ela se relaciona com o software, visto que não há um acordo na comunidade de software sobre a definição de sustentabilidade de software ou como ela deve ser atingida. Apesar das inúmeras contribuições para formalizar a definicao de sustentabilidade de software, o conceito continua intangível e ambíguo, com indivíduos, grupos e organizacional mantendo visões diametralmente opostas.
+
+No que se refere à sustentabilidade de software,
+a longevidade como expressão de tempo (``longo prazo'') e a capacidade de manutenção são fatores-chave para sua compreensão~\cite{venters_2018}.
+%
+A preocupação com a longevidade do software estende-se ao atributo de manutenibilidade, e ao modelo e processo de desenvolvimento de software adotados, que podem influenciar atributos relacionados à sustentabilidade.
+A manutenibilidade é reconhecidamente uma qualidade interna fundamental de sistemas de software~\cite{iec2014iso}, 
+enquanto que a sua relação com a sustentabilidade de software ainda é objeto de pesquisa na área.
+%
+O termo sustentabilidade propriamente dito ainda não está bem definido neste contexto, deixando espaço para diferentes interpretações, e ainda há pouca evidência ou orientação sobre processos ou modelos de desenvolvimento voltados para a sustentabilidade de software~\cite{venters_software_2021}.
+%Assim, definir sustentabilidade de software como a capacidade de perdurar ou como mais uma qualidade de software ao lado de manutenibilidade ainda não se mostra suficiente.
+
+% The relationship between software quality and software sustainability is still an open question.
+De um ponto de vista puramente técnico, \cite{venters_software_2021} define sustentabilidade de software como um requisito composto, não-funcional, de primeira classe, abrangendo as medidas de alguns conceitos centrais de atributos de qualidade de software, incluindo, no mínimo, manutenibilidade, extensibilidade e usabilidade.
+Na dimensão técnica, a sustentabilidade de software está relacionada às consequências de longo prazo de projetar, construir e entregar um projeto de software e se espalha por diversas áreas, dentre elas, qualidade de software e métricas, requisitos de software e arquitetura de software~\cite{DBLP:conf/re/KehrerP18,venters_software_2021}.
+Por fim, sustentabilidade de software diz respeito a assegurar que o software continue funcional para seus usuários ao longo do tempo, considerando também sua manutenção, inclusão de novos recursos, reparo de \textit{bugs}, e adaptações a novos ambientes de software e hardware.
+
+%Portanto uma possivel abordagem para definir sustentabilidade de software eh como uma medida dos atributos: manutenibilidade, extensibilidade e usabilidade.
+
+%In the case of software this means that it must continue to be available in the future, on new platforms and meeting new needs.
+%How can we ensure sustainability of scientific software? What does this mean for a particular project?
+
+\subsection*{Software de Pesquisa Sustentável}
+
+O \textit{Software de Pesquisa Sustentável} deve permanecer \textit{disponível e funcional} para a comunidade científica durante períodos de tempo significativos. 
+Não há uma resposta geral para a questão de quanto tempo o software precisa ser sustentado ou mantido. Este período pode depender da área de pesquisa, finalidade, função, frequência de uso, e da comunidade que o desenvolveu.
+
+Sustentabilidade de \RSw inclui o processo de desenvolvimento e manutenção de software para que o mesmo continue a cumprir seu propósito ao longo do tempo. 
+%
+Certamente, o \RSw sustentável precisará ser atualizado com novas funcionalidades e correções de \textit{bugs}, adaptado a novos ambientes computacionais, manter-se amigável aos seus usuários, tornar-se multiplataforma, ser testado e certificado.
+Garantir que o \RSw continue executável é desafiador, sendo  mais trabalhoso e caro do que um arquivamento simples de uma versão do software.  
+As alterações necessárias para que o software permaneça executável devem garantir a confiabilidade nos resultados gerados pelas versões mais antigas do software. 
+Se os resultados forem diferentes, justificativas objetivas devem ser fornecidas. 
+
+Há diversas maneiras de promover e investir na sustentabilidade do \RS, incluindo atração de desenvolvedores, suporte à comunidade de usuários, busca por financiamento ou até comercialização -- todas válidas, desde que resultem na disponibilidade de longo prazo do software para a comunidade científica. 
+Espera-se que, por meio da publicação de instruções, diretrizes e outras formas de ajuda e suporte, pesquisadores sejam capazes de decidir a forma de manter o seu software sustentável.
+
+% Sustainable software engineering (SSE)
+
+% Sustainable software engineering [4] motive is to create reliable, lifelong software that meets the needs of user’s requirement and also tried to reducing ecological impacts; its aim is to generate better software so there is no need to compromise future generations’ opportunities.

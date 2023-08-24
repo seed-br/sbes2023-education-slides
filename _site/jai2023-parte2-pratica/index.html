@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>JAI 3 - Princípios e Práticas para Sustentabilidade do Software de Pesquisa - Parte 2 | Grupo de Pesquisa SEED.BR</title>
+  <meta name="author" content="Christina, Daniela e Joenio" />
+  <link rel="stylesheet" href="/sbes2023/javascript/reveal.js/css/reveal.css">
+  <link rel="stylesheet" href="/sbes2023/javascript/reveal.js/css/theme/simple.css" id="theme">
+  
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="/sbes2023/javascript/reveal.js/lib/css/zenburn.css">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? '/sbes2023/javascript/reveal.js/css/print/pdf.css' : '/sbes2023/javascript/reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="/sbes2023/javascript/reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="/sbes2023/css/revealjs.css">
+</head>
+<body>
+  <div class="reveal">
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+      <section>
+
+  <h2 id="princpios-e-prticas-para-sustentabilidade-do-software-de-pesquisa">Princípios e Práticas para Sustentabilidade do Software de Pesquisa</h2>
+
+  <p>Apresentadoras:</p>
+
+  <p>Christina von Flach (IC-UFBA)</p>
+
+  <p>Daniela Feitosa (PGCOMP-UFBA)</p>
+
+</section>
+
+<section>
+  <h3 id="prticas">Práticas</h3>
+
+</section>
+
+<!-- -------------------------------- -->
+<section>
+  <h3 id="p1---o-software-est-hospedado-em-um-repositrio-pblico">P1 - O software está hospedado em um repositório público</h3>
+
+</section>
+
+<!-- -------------------------------- -->
+<section>
+
+  <p><img src="/sbes2023/files/parte2/github-logo.png" width="300" />
+<img src="/sbes2023/files/parte2/gitlab-logo.png" width="300" /></p>
+
+  <p><img src="/sbes2023/files/parte2/bitbucket-logo.png" width="300" />
+<img src="/sbes2023/files/parte2/launchpad-logo.png" width="300" /></p>
+
+  <p><img src="/sbes2023/files/parte2/sourceforge-logo.png" width="150" /></p>
+
+</section>
+
+<!-- -------------------------------- -->
+<section>
+
+  <p>https://github.com/seed-br/flosssearch</p>
+
+  <p><img src="/sbes2023/files/parte2/p1.png" /></p>
+
+</section>
+
+<!-- -------------------------------- -->
+<section>
+  <h3 id="p2---o-software-utiliza-controle-de-verso">P2 - O software utiliza controle de versão</h3>
+
+</section>
+
+<!-- -------------------------------- -->
+<section>
+
+  <p><img src="/sbes2023/files/parte2/git-logo.png" width="100" /><br /></p>
+
+  <p><img src="/sbes2023/files/parte2/version-control-diagram.png" width="400" />
+<small class="cite">
+Scott Chacon and Ben Straub. 2014. Pro Git (2nd. ed.). Apress, USA.
+</small></p>
+
+</section>
+
+<!-- -------------------------------- -->
+<section>
+
+  <p>Lista de modificações feitas no código-fonte ao longo do tempo (commits)</p>
+
+  <p><img src="/sbes2023/files/parte2/p2.png" width="700" /></p>
+
+</section>
+
+<!-- -------------------------------- -->
+<section>
+  <h3 id="p3---o-software-adota-explicitamente-uma-licena">P3 - O software adota explicitamente uma licença</h3>
+
+</section>
+
+<!-- -------------------------------- -->
+<section>
+
+  <p><img src="/sbes2023/files/parte2/software-licenses.png" width="700" /><br /></p>
+
+</section>
+
+<!-- -------------------------------- -->
+<section>
+
+  <p>Licença do software <em>flosssearch</em></p>
+
+  <p><img src="/sbes2023/files/parte2/p3.png" /></p>
+
+</section>
+
+<!-- -------------------------------- -->
+<section>
+  <h3 id="p4---o-software-est-registrado-e-apresenta-um-doi">P4 - O software está registrado e apresenta um DOI</h3>
+
+</section>
+
+<!-- -------------------------------- -->
+<section>
+  <h4 id="doi--digital-object-identifier">DOI =&gt; digital object identifier</h4>
+
+  <p>Referência vitalícia e permanente para registro de qualquer tipo de arquivo digital, trabalhos científicos, revistas, livros, imagens, soft ware…</p>
+
+</section>
+
+<section>
+
+  <p>Zenodo</p>
+
+  <p><img src="/sbes2023/files/parte2/p4.1.png" width="600" /></p>
+
+</section>
+
+<section>
+
+  <p>Figshare</p>
+
+  <p><img src="/sbes2023/files/parte2/p4.2.png" width="600" /></p>
+
+</section>
+
+<section>
+  <h3 id="p5---a-estrutura-de-arquivos-do-projeto-de-software-comunica-a">P5 - A estrutura de arquivos do projeto de software comunica a</h3>
+  <p>finalidade de seus elementos</p>
+
+</section>
+
+<section>
+
+  <p>https://github.com/analizo/analizo</p>
+
+  <p><img src="/sbes2023/files/parte2/p5.png" width="500" /></p>
+
+</section>
+
+<section>
+  <h3 id="p6---o-software-usa-formato-de-dados-e-interfaces-padronizadas">P6 - O software usa formato de dados e interfaces padronizadas</h3>
+
+  <p>Possibilita a interação de forma consistente</p>
+
+</section>
+
+<section>
+
+  <p>Formatos de dados</p>
+
+  <ul>
+    <li>
+      <p>JSON (JavaScript Object Notation)</p>
+    </li>
+    <li>
+      <p>XML (eXtensible Markup Language)</p>
+    </li>
+    <li>
+      <p>CSV (Comma-Separated Values)</p>
+    </li>
+    <li>
+      <p>YAML (YAML Ain’t Markup Language)</p>
+    </li>
+    <li>
+      <p>Protocol Buffers (protobuf)</p>
+    </li>
+    <li>
+      <p>JSON-LD (JSON for Linked Data)</p>
+    </li>
+  </ul>
+
+</section>
+
+<section>
+
+  <p>Protocolos de comunicação</p>
+
+  <ul>
+    <li>
+      <p>HTTP (Hypertext Transfer Protocol)</p>
+    </li>
+    <li>
+      <p>SMTP (Simple Mail Transfer Protocol)</p>
+    </li>
+    <li>
+      <p>FTP (File Transfer Protocol)</p>
+    </li>
+  </ul>
+
+</section>
+
+<section>
+  <h3 id="p7---a-documentao-apresenta-uma-viso-geral-do-software">P7 - A documentação apresenta uma visão geral do software</h3>
+
+</section>
+
+<section>
+
+  <p>https://github.com/seed-br/seed.select</p>
+
+  <p><img src="/sbes2023/files/parte2/p7.1.png" width="500" /></p>
+
+</section>
+
+<section>
+
+  <p>https://github.com/analizo/analizo</p>
+
+  <p><img src="/sbes2023/files/parte2/p7.2.png" width="500" /></p>
+
+</section>
+
+<section>
+  <h3 id="p8---o-software-possui-testes">P8 - O software possui testes</h3>
+
+</section>
+
+<section>
+
+  <p>https://github.com/analizo/analizo</p>
+
+  <p><img src="/sbes2023/files/parte2/p8.png" width="500" /></p>
+
+</section>
+
+<section>
+  <h3 id="p9---o-cdigo--revisado-antes-de-ser-publicado">P9 - O código é revisado antes de ser publicado</h3>
+
+</section>
+
+<section>
+
+  <p>https://github.com/analizo/analizo</p>
+
+  <p><img src="/sbes2023/files/parte2/p9.png" width="500" /></p>
+
+</section>
+
+<section>
+  <h3 id="p10---o-projeto-de-software-utiliza-rastreador-de-tarefas-e-bugs">P10 - O projeto de software utiliza rastreador de tarefas e bugs</h3>
+
+</section>
+
+<section>
+
+  <p>https://github.com/analizo/analizo</p>
+
+  <p><img src="/sbes2023/files/parte2/p10.png" width="500" /></p>
+
+</section>
+
+<section>
+  <h3 id="p11---tarefas-repetitivas-so-automatizadas">P11 - Tarefas repetitivas são automatizadas</h3>
+
+</section>
+
+<section>
+
+  <p>https://github.com/OceanParcels/parcels</p>
+
+  <p><img src="/sbes2023/files/parte2/p11.png" width="400" /></p>
+
+</section>
+
+<section>
+  <h3 id="p12---h-integrao-e-implantao-contnuas">P12 - Há integração e implantação contínuas</h3>
+
+</section>
+
+<section>
+
+  <p>https://github.com/OceanParcels/parcels</p>
+
+  <p><img src="/sbes2023/files/parte2/p12.1.png" width="400" />
+<img src="/sbes2023/files/parte2/p12.2.png" width="400" /></p>
+
+</section>
+
+<section>
+  <h3 id="p13---h-lanamento-de-verses-do-software">P13 - Há lançamento de versões do software</h3>
+
+</section>
+
+<section>
+
+  <p>https://github.com/OceanParcels/parcels</p>
+
+  <p><img src="/sbes2023/files/parte2/p13.1.png" width="400" /></p>
+
+</section>
+
+<section>
+
+  <p>https://github.com/OceanParcels/parcels</p>
+
+  <p><img src="/sbes2023/files/parte2/p13.2.png" width="600" /></p>
+
+</section>
+
+<section>
+  <h3 id="p14---h-evidncia-de-uma-comunidade-presente-ou-futuro">P14 - Há evidência de uma comunidade (presente ou futuro)</h3>
+
+</section>
+
+<section>
+
+  <p>https://github.com/OceanParcels/parcels</p>
+
+  <p><img src="/sbes2023/files/parte2/p14.1.png" width="450" /></p>
+
+</section>
+
+<section>
+
+  <p>https://github.com/OceanParcels/parcels</p>
+
+  <p><img src="/sbes2023/files/parte2/p14.2.png" /></p>
+
+</section>
+
+<section>
+  <h3 id="p15---o-software--divulgado-para-a-comunidade-acadmica">P15 - O software é divulgado para a comunidade acadêmica</h3>
+
+</section>
+
+<section>
+
+  <p>https://github.com/OceanParcels/parcels</p>
+
+  <p><img src="/sbes2023/files/parte2/p15.png" /></p>
+
+</section>
+
+<section>
+  <h3 id="p16---h-uma-forma-recomendada-para-citao-do-software">P16 - Há uma forma recomendada para citação do software</h3>
+
+</section>
+
+<section>
+
+  <p>https://github.com/OceanParcels/parcels</p>
+
+  <p><img src="/sbes2023/files/parte2/p16.png" width="600" /></p>
+
+</section>
+
+<section>
+  <h3 id="avaliao-de-sustentabilidade">Avaliação de Sustentabilidade</h3>
+
+  <p><img src="/sbes2023/files/parte2/sust-mosyn-1.png" width="400" />
+<img src="/sbes2023/files/parte2/sust-mosyn-2.png" width="500" /></p>
+
+  <p>https://github.com/mpnetto/MoSyn</p>
+</section>
+
+<section>
+  <h3 id="fairness">FAIRness</h3>
+
+  <p><em>F</em>indable – localizável</p>
+
+  <p><img src="/sbes2023/files/parte2/fair-mosyn-f.png" width="400" /></p>
+
+  <p>https://github.com/mpnetto/MoSyn</p>
+</section>
+
+<section>
+  <h3 id="fairness-1">FAIRness</h3>
+
+  <p><em>A</em>ccessible – acessível</p>
+
+  <p><img src="/sbes2023/files/parte2/fair-mosyn-a.png" width="400" /></p>
+
+  <p>https://github.com/mpnetto/MoSyn</p>
+</section>
+
+<section>
+  <h3 id="fairness-2">FAIRness</h3>
+
+  <p><em>I</em>nteroperable – interoperável</p>
+
+  <p><img src="/sbes2023/files/parte2/fair-mosyn-i.png" width="400" /></p>
+
+  <p>https://github.com/mpnetto/MoSyn</p>
+</section>
+
+<section>
+  <h3 id="fairness-3">FAIRness</h3>
+
+  <p><em>R</em>eusable – reutilizável</p>
+
+  <p><img src="/sbes2023/files/parte2/fair-mosyn-r.png" width="400" /></p>
+
+  <p>https://github.com/mpnetto/MoSyn</p>
+</section>
+
+<section>
+
+  <h3 id="consideraes-finais">Considerações Finais</h3>
+
+</section>
+
+<section>
+
+  <h3 id="princpios-e-prticas-para-sustentabilidade-do-software-de-pesquisa-1">Princípios e Práticas para Sustentabilidade do Software de Pesquisa</h3>
+
+  <p>Apresentadoras:</p>
+
+  <p>Christina von Flach (IC-UFBA): flach@ufba.br</p>
+
+  <p>Daniela Feitosa (PGCOMP-UFBA): dfeitosa@ufba.br</p>
+
+</section>
+
+    </div>
+  </div>
+  <script src="/sbes2023/javascript/reveal.js/lib/js/head.min.js"></script>
+  <script src="/sbes2023/javascript/reveal.js/js/reveal.js"></script>
+  <script>
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+      controls: true,
+      progress: true,
+      slideNumber: 'c/t',
+      history: true,
+      center: true,
+      fragments: true,
+      transition: 'slide', // none/fade/slide/convex/concave/zoom
+      backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
+      // Optional reveal.js plugins
+      dependencies: [
+        { src: '/sbes2023/javascript/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+        { src: '/sbes2023/javascript/reveal.js/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: '/sbes2023/javascript/reveal.js/plugin/zoom-js/zoom.js', async: true },
+        { src: '/sbes2023/javascript/reveal.js/plugin/notes/notes.js', async: true }
+      ]
+    });
+  </script>
+</body>
+</html>

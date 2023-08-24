@@ -1,0 +1,159 @@
+%-----------------------------------------------%
+\section{Avaliação do \RSw \texttt{MoSyn} }
+\label{section:casesstudy:mosyn}
+
+Nesta seção, apresentamos os resultados de um estudo exploratório conduzido com um grupo de pesquisa da área de Física com o objetivo de identificar problemas relacionados ao \RSw desenvolvido pelo grupo, fazer uma caracterização inicial da sustentabilidade 
+e aderência aos princípios FAIR de um \RSw e recomendar boas práticas para torná-lo mais sustentável e aberto.
+
+\subsection{Entrevista com Pesquisador}
+
+A primeira atividade do estudo foi a realização de uma entrevista com um pesquisador sênior e líder de grupo de pesquisa da área de Física Aplicada, com mais de 30 anos de experiência. 
+%O entrevistado realizou um breve curso técnico relacionado à computação.
+Seu interesse no desenvolvimento de \RSw é motivado pelo desejo de utilizar a computação como ferramenta para avançar o conhecimento em sua área de pesquisa.
+As respostas forneceram importantes considerações sobre o uso de práticas de sustentabilidade no \RSw desenvolvido por seu grupo.
+
+De forma geral, as opiniões do pesquisador endossam fortemente o uso de \RSw sustentável para o grupo de pesquisa. Ele reconhece o valor desse trabalho e o desejo de contribuir para a comunidade de pesquisa em geral.
+Sua crença nos benefícios da sustentabilidade, aliada ao entusiasmo em tornar o software acessível e ao reconhecimento da importância da replicação, reforça ainda mais o apoio do pesquisador às práticas de \RSw sustentável.
+Ele destaca a necessidade de mais conhecimento por parte dos desenvolvedores do grupo de pesquisa.
+Os integrantes do grupo valorizariam ter suporte para entender e implementar essas práticas de forma eficaz. 
+
+Os resultados também destacam as considerações e dilemas relacionados ao desejo de abertura, à proteção de suas contribuições intelectuais e ao receio de comprometer a integridade e a credibilidade de sua pesquisa ao compartilhá-la prematuramente.
+A falta de familiaridade dos desenvolvedores de \RSw com as melhores práticas de desenvolvimento de código também é considerada uma barreira. 
+O grupo de pesquisa inclui pesquisadores com formação acadêmica em diferentes áreas, 
+sendo que sua \textit{expertise} principal está nas respectivas áreas de pesquisa, e não na engenharia de software.
+
+Durante a entrevista, o pesquisador inicialmente tinha pouco conhecimento sobre as práticas de sustentabilidade em \RSw, mas demonstrou entusiasmo e aceitou as práticas apresentadas assim que foram introduzidas,  reconhecendo os benefícios e a importância da adoção de práticas de sustentabilidade no desenvolvimento de \RS. 
+Outro fator de apoio identificado é o compromisso com a promoção da reprodutibilidade em sua pesquisa. 
+Com os dados e o código publicamente disponíveis, a pesquisa pode ser replicada e potencialmente expor quaisquer erros ou inconsistências, contribuindo para a confiabilidade e robustez do conhecimento científico como um todo.
+
+A atitude positiva do pesquisador em relação ao \RSw sustentável reflete uma apreciação genuína pelos benefícios que ele oferece ao seu trabalho. O pesquisador deseja que seu software esteja disponível para todos, reconhecendo seu potencial para auxiliar inúmeros pesquisadores. Ele enfatiza as aplicações práticas dos resultados da pesquisa em ambientes clínicos, onde o software poderia ser usado para avaliar e tratar pessoas de forma eficaz.
+Além disso, o pesquisador destaca a importância da replicação na pesquisa e o papel do software sustentável em garantir resultados precisos e confiáveis, reconhecendo que erros e \textit{bugs} são inerentes ao software. Ele e seu grupo de pesquisa estão interessados em identificar e corrigir esses problemas. O pesquisador também reconhece os benefícios dos testes automatizados na garantia de que as novas versões do software sejam confiáveis e na correção de \textit{bugs} anteriores, economizando assim tempo e esforço valiosos. O pesquisador compreende os benefícios de tornar o \RSw sustentável e de colaborar para avançar o conhecimento científico.
+
+No final da entrevista, solicitamos que o pesquisador indicasse alguns projetos de \RSw para avaliação de  sustentabilidade. Os resultados da avaliação, reportados em um relatório técnico, com sugestão de práticas e  melhorias,
+seriam enviados para o pesquisador. 
+%
+Para a primeira avaliação de sustentabilidade, escolhemos o software \texttt{MoSyn}\footnote{\url{https://github.com/mpnetto/MoSyn}}, um aplicativo para análise de grafos variáveis no tempo.
+
+\subsection{Avaliação da Sustentabilidade}
+
+O \RSw \texttt{MoSyn} é um aplicativo baseado em MATLAB, projetado para a análise de grafos variantes no tempo (TVGs) e suas medidas associadas. A ferramenta fornece uma estrutura modular com várias classes e funções para lidar com diferentes aspectos da análise, como configuração, recursos gráficos e gerenciamento de projetos.
+
+A Tabela~\ref{tab:ssi:criteria:garcia} apresenta um resumo da avaliação da sustentabilidade do software \texttt{MoSyn}.
+A seguir, apresentamos trechos do \textit{Relatório de Avaliação} do software \texttt{MoSyn} com referências às práticas apresentadas na Tabela.
+
+\input{JAI 2023/tables/ssi-criteria-garcia}
+
+%------------------------------------%
+\subsection*{\# Relatório de Avaliação da Sustentabilidade do Software \texttt{MoSyn}}
+
+\noindent \textbf{\#\# Práticas Básicas}
+
+O software \texttt{MoSyn} esteve hospedado em um repositório público desde o início de seu desenvolvimento (\textbf{P1}).
+Apesar da hospedagem do \RSw no GitHub
+e uso das facilidades da plataforma,
+um backup periódico tem sido realizado em um dispositivo de armazenamento do grupo de pesquisa, mantido nas instalações do grupo.
+%
+No GitHub a identidade do software é clara e única: o nome público do software é \texttt{MoSyn}. Apesar de ter um arquivo README.md, não há uma descrição do projeto que facilite sua indexação nos mecanismos de busca.
+%. Inicialmente, o repositório não incluía muitos metadados. Quatro meses após a entrevista com um pesquisador do grupo foram incluídos os arquivos descrevendo o software, a licença e informações sobre como contribuir e o código de conduta. Alguns metadados estão faltando, como lista de autores e versões do software identificando o que está presente. O software também não apresenta um DOI, mas pode ser encontrado no GitHub pelo nome. Apesar de ter um arquivo README.md, não há uma descrição do projeto que facilite sua indexação nos mecanismos de busca.  Não há uma página ou site dedicado para sua divulgação.
+
+Por estar hospedado no GitHub, \texttt{MoSyn} possui suporte para controle de versão (\textbf{P2}). 
+Inicialmente, o repositório do projeto não apresentava a licença de software (\textbf{P3}). Após quatro meses da realização da entrevista com o pesquisador sênior do grupo, 
+houve um \textit{commit} no repositório do software para a inclusão do arquivo  \textit{LICENSE}, descrevendo a licença escolhida, porém sem deixar claro se as permissões se aplicam a qualquer arquivo fonte do repositório.
+A licença atribuída ao software \texttt{MoSyn} é a MIT\footnote{\url{https://opensource.org/license/mit/}}, um licença usada em projetos de software livre e em projeto de software proprietário.
+%\noindent \textbf{Registro de Software.}
+Quanto ao registro do software (\textbf{P4}),
+o repositório não menciona se há um DOI associado a ele. Além disso, não encontramos uma referência para o software \texttt{MoSyn} no Zenodo.
+
+\noindent \textbf{\#\# Organização do Projeto}
+
+%\noindent \textbf{Estrutura do projeto.}
+O repositório do \texttt{MoSyn} possui uma estrutura de arquivos (\textbf{P5}) bem definida, e usa nomes auto-explicativos para pastas e arquivos que facilitam a compreensão do propósito e utilidade do \RS.
+%\noindent \textbf{Padronização}.
+O software \texttt{MoSyn} também se preocupa com padronização (\textbf{P6}) visto que é uma aplicação que depende do software MATLAB\footnote{\url{https://www.mathworks.com/products/matlab.html}}, uma plataforma paga para programação e computação numérica usada por engenheiros e cientistas para analisar dados, desenvolver algoritmos e criar modelos.
+Assim, o \texttt{MoSyn}
+utiliza formatos de entrada e saída que facilitam a integração com o MATLAB.
+
+%\noindent \textbf{Documentação.}
+
+No \texttt{MoSyn}, a preocupação com documentação do software  (\textbf{P7}) ainda é incipiente e voltada para usuários do software.
+Inicialmente, o repositório não tinha qualquer documentação. Quatro meses após a entrevista realizada com o pesquisador, um arquivo \textit{README} foi adicionado ao repositório com descrição da ferramenta, lista de funcionalidades, informações sobre utilização e contribuição e licença utilizada pelo software (\textbf{P7}). Os autores do software não estão listados em um arquivo, mas é possível identificar as pessoas que contribuíram com o software a partir de informações sobre autores das mudanças registradas pelo sistema de controle de versão (\textit{commits}). 
+Finalmente, os desenvolvedores deram início à construção de um site para publicação de informações sobre o projeto de pesquisa e o software usando o \textit{GitHub Pages}. 
+% mas não há muitas informações e ao tentar acessar alguns links mencionados eles direcionam para uma página não existente, dificultando o acesso ao conteúdo referenciado.
+
+\subsection*{\#\# Qualidade}
+
+%\noindent \textbf{\#\# Testes}
+O \textit{MATLAB Test}\footnote{\url{https://www.mathworks.com/products/matlab-test.html}} é um conjunto de ferramentas para o desenvolvimento, gerenciamento, análise e teste de aplicações MATLAB.
+Entretanto, o \RSw \texttt{MoSyn} ainda não implementa testes de software automatizados
+(\textbf{P8}). Vale destacar que as ferramentas do \textit{MATLAB Test}, assim como o MATLAB, são produtos de software fechados e que requerem assinaturas pagas. 
+
+
+%\noindent \textbf{Revisão de código.}
+Considerando que o software \texttt{MoSyn} está publicado no GitHub, é possível realizar a revisão de código (\textbf{P9}) colaborativamente, utilizando a infraestrutura oferecida pela plataforma.  
+%fazer \textit{pull requests} e a realização de revisão de código. 
+Porém, até o dia da avaliação do \RS, todos os pedidos de mudança no código (\textit{pull requests}) listados no repositório foram aprovados pelo próprio autor, sugerindo que não houve revisão de código por outra pessoa.
+
+\noindent \textbf{\#\# Gerência}
+
+%\noindent \textbf{Rastreador de tarefas e bugs.}
+O software \texttt{MoSyn} está hospedado no GitHub e conta com o seu rastreador de tarefas e \textit{bugs} nativo (\textbf{P10}). 
+O \textit{GitHub Docs}\footnote{\url{https://docs.github.com/pt}}, apresenta uma breve introdução sobre como reportar um problema usando o rastreador de tarefas. 
+Entretanto, o rastreador nativo do GitHub ainda não foi utilizado no projeto \texttt{MoSyn}.
+%\noindent \textbf{Automatização de tarefas.}
+Não foram encontradas tarefas automatizadas ou indício de automatização de tarefas (\textbf{P11}).
+Por fim, não há suporte para integração e implantação contínuas (\textbf{P12}). Por ser um \textit{plugin} instalado manualmente pelo usuário no MATLAB, tais práticas não são viáveis.
+
+%\noindent \textbf{Lançamento de versões.}
+O projeto não segue a prática de lançamento de versões (\textbf{P13}) no repositório do GitHub. As funcionalidades de 'Releases' e 'Tags' que facilitariam a referência e a descrição das funcionalidades e \textit{bugs} incluídos naquela versão específicas não são utilizadas.
+Apesar de não realizarem lançamentos oficiais de versões, se fosse necessário citar o \RSw em um artigo, os autores poderiam fazer referência a um \textit{commit} específico no repositório do projeto.
+No histórico do projeto, vimos que um \textit{commit} com a mensagem ``mosyn 2.0'' foi incorporado quatro meses após a entrevista. 
+Essa mensagem sugere uma intenção de indicar uma alteração significativa no projeto e associar um número de versão.
+
+\subsection*{\#\# Reconhecimento}
+
+%\noindent \textbf{Comunidade do projeto.}
+O projeto ainda não possui uma comunidade (\textbf{P14}).
+Apenas o usuário dono do repositório submeteu \textit{commits} e \textit{pull requests} no projeto. A página do projeto no GitHub não apresenta outros usuários que adicionaram o projeto como favorito e não mostra usuários que fizeram uma cópia independente (\textit{fork}) do projeto.
+
+%\noindent \textbf{Divulgação de Software.}
+Não encontramos artigos ou outras formas de divulgação do \RSw em eventos científicos (\textbf{P15}). % Perguntar a GARCIA.
+O software \texttt{MoSyn} / MATLAB é mencionado e foi usado em uma dissertação de mestrado na área de Saúde
+%\footnote{\url{https://repositorio.ufba.br/bitstream/ri/35598/1/dissertacao_de_mestrado_-_thaise_g._l._de_o._toutain.pdf}}
+para extrair índices de redes funcionais cerebrais (RFC) para análise estatística~\cite{toutain}. 
+Entretanto, não encontramos no texto da dissertação um identificador ou referência para o software ou para a versão usada.
+%\noindent \textbf{Citação de Software.}
+Também não encontramos citação do software em publicações e na dissertação mencionada (\textbf{P16}), nem informações sobre como o software deveria ser citado.
+
+\subsection{Avaliação de \textit{FAIRness}}
+
+As Tabelas~\ref{tab:fairness:garcia:f}, \ref{tab:fairness:garcia:a} e~\ref{tab:fairness:garcia:ir} apresentam uma avaliação preliminar de \textit{FAIRness} do software \texttt{MoSyn}. 
+Cada linha da tabela apresenta um princípio, sua descrição, indicação se o software atende ou não ao princípio, e uma justificativa se procedente. Nas tabelas, destacamos as linhas em que o software \textit{não} atendeu ou atendeu \textit{parcialmente} ao princípio.
+A seguir, discutimos como \RSw incorporou os princípios \textit{FAIR}.
+
+\subsection*{\# Relatório de Avaliação de \textit{FAIRness} do Software \texttt{MoSyn}}
+
+\noindent \textbf{\#\# F: O software e seus metadados associados são facilmente encontrados tanto por humanos quanto por máquinas}
+
+O software \texttt{MoSyn} está hospedado com uma identidade clara e única no GitHub, não globalmente e o repositório não garante a persistência do identificador se o software for movido, por exemplo (\textbf{F1}). Os componentes do software, como classes e bibliotecas, apresentam identificadores distintos (\textbf{F1.1}).  Cada versão do software pode ser unicamente identificada por um \textit{hash de commit} e, a partir dele, é possível recuperar os metadados da versão específica (\textbf{F1.2}). O software apresenta metadados, mas não descreve as dependências, informações detalhadas sobre utilização e configuração e como deve ser a entrada e saída de arquivos (\textbf{F2}). Ao analisar os metadados a partir de um commit, é possível verificar qual versão específica do software o metadado está se referindo (\textbf{F3}). Apesar de incluir um arquivo README com informações do projeto, não há uma descrição na configuração do projeto que facilite a indexação nos mecanismos de busca (\textbf{F4}).
+
+\noindent \textbf{\#\# A: O software e seus metadados podem ser obtidos através de protocolos padronizados}
+
+O software \texttt{MoSyn} pode ser obtido a partir do repositório do projeto no GitHub (\textbf{A1}). Não há restrições para baixar o código-fonte, como taxas os custos relacionados à licença (\textbf{A1.1}). É possível configurar o repositório para ser acessado apenas por pessoas autorizadas (\textbf{A1.2}). Os metadados estão descritos em arquivos no repositório, então ele não seriam acessíveis caso o repositório do software não esteja mais disponíveis (\textbf{A2}).
+
+\noindent \textbf{\#\# I: O software interopera com outros software trocando dados e/ou metadados através da interação via interface de programação de aplicativos (APIs), descrito por meio de padrões}
+
+O software \texttt{MoSyn} é uma aplicação para MATLAB e, portanto, interopera seguindo seu padrão, mas a forma como a interação ocorre não está explicitamente descrito (\textbf{I1}). O repositório menciona o MATLAB como pré-requisito para executar a aplicação e inclui agradecimentos pela utilização de bibliotecas e recursos externos e recursos, mas não inclui referências qualificadas, como websites ou os nomes da bibliotecas e recursos externos utilizados (\textbf{I2}). 
+
+\noindent \textbf{\#\# R: O software é tanto utilizável (pode ser executado) quanto reutilizável (pode ser compreendido, modificado, aprimorado ou incorporado a outros softwares)}
+
+O software \texttt{MoSyn} não disponibiliza muitas informações descrevendo como reutilizar o software (\textbf{R1}). O software  está licenciado sob a licença de código aberto MIT, que permite a reutilização, mas não deixa claro se todas as partes do software seguem a mesma licença (\textbf{R1.1}). A partir dos commits e da lista de contribuidores do projeto no GitHub é possível saber quais pessoas contribuíram com o software, mas não há informações explícitas sobre como o software foi desenvolvido ou quais foram as intenções originais (\textbf{R1.2}). Os nomes e informações sobre as bibliotecas utilizadas não são mencionadas na documentação (\textbf{R2}). A comunidade MATLAB recomenda que sejam seguidas as melhores práticas de desenvolvimento de software em relação a correção, clareza e generalização e o software, em geral, atende a esses padrões (\textbf{R3}).
+
+\input{JAI 2023/tables/fairness-garcia}
+
+%\subsection{Discussão}
+
+%O objetivo da avaliação do \RSw \texttt{MoSyn} não é reportar se ele é sustentável ou não é sustentável. 
+% O processo de avaliar um \RSw com base nas práticas usadas no desenvolvimento inicial e manutenção contínua promove a observação e reflexão sobre o produto de software e as práticas empregadas, tanto para o desenvolvimento como para promover seu reconhecimento pela comunidade científica.
+
+
+%Proposta de identificadores persistentes especifico para Software como o SWHID \footnote{https://www.swhid.org}.
