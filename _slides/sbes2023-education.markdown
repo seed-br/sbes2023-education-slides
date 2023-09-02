@@ -6,54 +6,49 @@ theme: simple
 <!-- -------------------------------- -->
 <section>
 
-## Princípios e Práticas para Sustentabilidade do Software de Pesquisa
+## Teaching and Promoting Engagement with OSS: 
+### Yet Another Experience Report
 
 
-(*) Christina von Flach (IC-UFBA)
+#### (*) Christina von Flach (IC-UFBA)
 
-Daniela Feitosa (PGCOMP-UFBA)
+#### Daniela Feitosa (PGCOMP-UFBA)
 
-#### Campo Grande, 29/9/2023
+Campo Grande, 29/9/2023
 
 </section>
 
 <!-- -------------------------------- -->
 <section>
 
-> 92% dos pesquisadores do Reino Unido usam software em suas pesquisas e 69% declaram que a pesquisa não poderia ser realizada sem software.
+### Context
 
-> **56%** dos pesquisadores de todas as áreas do Reino Unido **desenvolvem o software usado em sua pesquisa**.
+> The need to reconcile theory and practice, using "real-world" scenarios to stimulate the improvement of technical and soft skills
+is demanding for Software Engineering (SE) and Computer Science Education.
+
+> Previous experience
 
 <small class="cite">
-HETTRICK, S. et al. **UK Research Software Survey 2014**, 2014.
+XX, YY, VVV
 </small>
 </section>
 
 <!-- -------------------------------- -->
 <section>
-### Software **Acadêmico** 
-### _Academic Software_
+### Open Source Software (OSS)
 
-Todo software usado para coletar, processar ou analisar resultados de pesquisas
-com intenção de publicação na literatura acadêmica, incluindo desde protótipos
-escritos pelos próprios cientistas, a produtos completos desenvolvidos
-profissionalmente.
+The availability of source code and the access to its community and development workflows are appealing factors for adopting OSS in SEE.
 
 <small class="cite">
-ALLEN, A. et al. **Engineering Academic Software (Dagstuhl Perspectives Workshop
-16252)**. In: Dagstuhl Manifestos. [S.l.]: Schloss Dagstuhl-Leibniz-Zentrum fuer
-Informatik, 2017.
+2017.
 </small>
 </section>
 
 <!-- -------------------------------- -->
 <section>
-### Software de **Pesquisa** 
-### _Research Software_
+### Example
 
-Todo software desenvolvido pelos próprios cientistas no _contexto da pesquisa_,
-com recomendação para que, ao lado dos conjuntos de dados da pesquisa, 
-o código-fonte ou o ambiente de execução do software também sejam disponibilizados.
+JabRef
 
 <small class="cite">
 Nieuwpoort, Rob van and Katz, Daniel S. **Defining the Roles of Research Software**. [DOI: 10.54900/9akm9y5-5ject5y](https://doi.org/10.54900/9akm9y5-5ject5y), 2023.
@@ -62,8 +57,7 @@ Nieuwpoort, Rob van and Katz, Daniel S. **Defining the Roles of Research Softwar
 
 <!-- -------------------------------- -->
 <section>
-### Software de Pesquisa
-### Analizo
+### Benefits
 
 <img src="{{ site.baseurl }}/files/parte1/analizo-website.png" width="500" style="box-shadow:0px 0px 2px gray;background:white" />
 
@@ -71,23 +65,18 @@ Nieuwpoort, Rob van and Katz, Daniel S. **Defining the Roles of Research Softwar
 
 <!-- -------------------------------- -->
 <section>
-### Software de Pesquisa
+### Challenges
 
-+ Você desenvolve software durante a sua pesquisa?
-+ Qual a principal função do seu software?
-+ Você considera o seu software como um instrumento ou como um resultado de sua pesquisa?
-+ O software é usado por outros membros de seu grupo de pesquisa ou outros grupos de pesquisa?
-+ O software é modificado por outros membros de seu grupo de pesquisa ou outros grupos de pesquisa?
 </section>
 
 <!-- -------------------------------- -->
 <section>
-### Hoje
+### Yet Another
 
-1. Princípios da Ciência Aberta
-2. Software de Pesquisa Sustentável e FAIR
-3. Práticas para o Desenvolvimento de Software de Pesquisa Sustentável
-4. Avaliação do Software de Pesquisa
+1. Experiência prévia (desde 2011)
+2. Disciplina optativa
+3. Preocupação com engajamento e nucleação
+4. Preocupação com acompanhamento e feedback
 </section>
 
 <!-- -------------------------------- 
@@ -102,9 +91,27 @@ Nieuwpoort, Rob van and Katz, Daniel S. **Defining the Roles of Research Softwar
 <!-- -------------------------------- -->
 <section>
 
-### O que é Ciência Aberta?
+### Diários
 
-> Recomendação da UNESCO sobre Ciência Aberta.
+<img src="{{ site.baseurl }}/files/diario.png" width="550" style="box-shadow:0px 0px 2px gray;background:white" />
+
+</section>
+
+<!-- -------------------------------- -->
+<section>
+
+### Plano de Aulas
+
+<img src="{{ site.baseurl }}/files/plano.png" width="1200" style="box-shadow:0px 0px 2px gray;background:white" />
+
+</section>
+
+<!-- -------------------------------- -->
+<section>
+
+### Auto-avaliação
+
+<img src="{{ site.baseurl }}/files/auto-avaliacao.png" width="1200" style="box-shadow:0px 0px 2px gray;background:white" />
 
 </section>
 
